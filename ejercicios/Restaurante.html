@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+Fecha: 24/11/2020
+Título: Comanda
+Autor: Manuel Carrillo
+-->
+<head>
+	<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+	<title>Comanda del restaurante</title>
+
+<style>
+div {
+   box-sizing:border-box;
+   padding:40px;
+   background-color:#f2f2f2;
+}
+
+.contenido{
+   
+   background-color:#f2f2f2;
+}
+
+.miFondoGris{
+   background-color=lightgrey;
+}
+body{
+   margin: 0%;
+}
+@media only screen and (max-width: 800px) {
+
+	.nav, .contenido {
+     width: 100%;
+     float: none;
+	}
+  }
+</style>
+
+</head>
+
+<body style="background-color:lightgrey;">
+<div style="background-color:grey;">
+<p>1. CABECERA</p>
+</div>
+<div style="float:right; width:30%; height:800px; background-color:lightgrey;" class="nav">
+   <details>
+      <summary>3.MENU</summary>
+  <ul>
+     <li>Entrantes</li>
+     <li>Primer plato</li>
+     <li>Segundo plato</li>
+     <li>Postre</li>
+     <li>Bebidas</li>
+  </ul>
+  </details>
+</div>
+<div class="contenido" style="float:none; width:70%; height:800px; ">
+<p>2. Contenido</p>
+<form>
+   <label for="idmesas">Elige una mesa</label>
+   <select style="margin:5px;" name="idmesas" id="idmesas">
+      <option value="1">Mesa 1</option>
+      <option value="2">Mesa 2</option>
+      <option value="3">Mesa 3</option>
+      <option value="4">Mesa 4</option>
+      <option value="4">Mesa 5</option>
+   </select>
+   <br>
+   
+   
+   <label for="numcomensales">Selecciona el numero de comensales</label>
+   <input type="number" id="numcomensales" name="numcomensales" min="1" max="5" step="1">
+   <input type="submit" id="boton2" value="enviar">
+</div>
+
+<div style="background-color:grey;">
+<p>4. Pie de pagina</p>
+</div>
+
+
+
+</body>
+</html>
