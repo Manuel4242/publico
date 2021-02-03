@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Tema: Web Storage - localstorage y sessionstorage 
+alumno: Manuel Carrillo
+fecha: 26 de enero
+-->
+
+<head>
+	<title>HTML5 - WebStorage - sessionStorage</title>
+	<meta charset="UTF-8" />
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+	</style>
+
+
+</head>
+
+<body style="margin: 0%;">
+
+	<header style="height: 100px; display: flex; width: 100%;">
+		<div style="width: 25%;float: left; padding: 25px; background-color: blue;"></div>
+		<div style="width: 50%; float: left; padding: 25px; background-color: green; border: 15px solid black;"></div>
+		<div style="float: right; width: 25%; padding: 25px; background-color: red;">
+			<div style="float: right; width: 100%; text-align: right;" id="mensaje"></div>
+			<form name="miFormulario" onSubmit="return salir()">
+				<input style="float: right;" type="submit" value="Salir">
+			</form>
+		</div>
+	</header>
+
+	<script>
+		// seccion de codigo javascript 
+		// Valida que el browser lo permita
+		document.getElementById("mensaje").innerHTML = sessionStorage.getItem("usuario");
+
+		function salir() {
+			if (typeof (Storage) !== "undefined") {
+				sessionStorage.removeItem("usuario");
+			} else {
+				alert("Este navegador no soporta web storage...");
+			}
+			window.location.replace("26ene-1DAM-login.html");
+			return false;
+		}
+
+	</script>
+</body>
+
+</html>
