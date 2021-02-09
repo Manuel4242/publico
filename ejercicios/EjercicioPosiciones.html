@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina: Ejercicio de Posiciones
+alumno: Manuel Carrillo
+fecha: 9/2/2021
+-->
+
+<head>
+	<title>Ejercicio Posiciones</title>
+	<meta charset="UTF-8" />
+	<style>
+		/* aquí estilos aplicados solo a esta pagina */
+		.pos_static {
+			background-color: blue;
+			/*Flujo normal de la pagina, se aplica por defecto, no aplica ningun desplazamiento*/
+			position: static;
+			left: 50px;
+			top: 50px;
+		}
+
+		.pos_relative {
+			background-color: blue;
+			/*desplaza el objeto en relacion a su entorno respetando el espacio desplazado*/
+			position: relative;
+			left: 50px;
+			top: 50px;
+		}
+		.pos_absolute {
+			background-color: blue;
+			/*Fija el objeto en la posicion indicada respecto al total de su contenedor, no respeta el espacio desplazado,
+			reduce el espacio al tamaño del objeto*/
+			position: absolute;
+			left: 50px;
+			top: 50px;
+		}
+
+		.pos_fixed {
+			background-color: blue;
+			/*Fija el objeto en la posicion indicada a la ventana de navegacion, no respeta el espacio desplazado,
+			reduce el espacio al tamaño del objeto y permanece fijado al hacer scroll*/
+			position: fixed;
+			left: 50px;
+			top: 50px;
+		}
+
+		.pos_sticky {
+			background-color: blue;
+			/*El objeto permanece en su posicion original hasta el momento de hacer scroll,
+			momento en el que permanece fijado al viewport*/
+			position: sticky;
+			left: 50px;
+			top: 50px;
+		}
+	</style>
+
+</head>
+
+
+<body>
+	<header>
+		<h1>CSS POSITION:</h1> <!-- 1 y solo 1 por pagina -->
+		<h2>STATIC</h2>
+		<br>
+	</header>
+
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>(1) Parrafo largo de prueba para hacer relleno</p>
+	<p class="pos_sticky">(2) Parrafo largo de prueba para hacer relleno</p>
+	<p>(3) Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+	<p>Parrafo largo de prueba para hacer relleno</p>
+
+	<footer>
+		<br /><br /><br />
+		<div>&copy; 2020 <a href="https://manuel4242.github.io/publico/" target="_blank">Manuel Carrillo</a></div>
+	</footer>
+
+
+	<script>
+	// seccion de codigo javascript 
+
+	</script>
+</body>
+
+</html>
