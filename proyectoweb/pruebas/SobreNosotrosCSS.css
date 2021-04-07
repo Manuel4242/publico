@@ -26,7 +26,6 @@ header {
 }
 
 #menu {
-    
     width: 10%; 
     visibility: hidden; 
     padding-top: 22px; 
@@ -372,6 +371,10 @@ h2{
     content: "";
     display: table;
     clear: both;
+}
+
+#logo-cenec{
+    width: 60%;
 }
 
 @media screen and (max-width: 600px) {
