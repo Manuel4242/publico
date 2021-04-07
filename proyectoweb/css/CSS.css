@@ -113,7 +113,7 @@ nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
     height: 60px;
   }
 
-  #subnav form {float: right;}
+#subnav form {float: right;}
 
 #subnav input[type=text] {
   width: 300px; 
