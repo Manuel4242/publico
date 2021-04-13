@@ -1,0 +1,176 @@
+
+/*Estilo del main*/
+#parallax {
+    background-image: url(../media/fotos/alfa/Alfa-Romeo-Alfetta-1.jpg);
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax2 {
+    background-image: url(../media/fotos/alfa/Alfa-Romeo-33-Stradale-9.jpg);
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#parallax h1 {
+    color: #f2f2f2;
+    text-align: center;
+    font-size:50px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding: 25px 50px 25px 50px;
+}
+
+.titulo {
+  text-align: center;
+  padding: 15px;
+  border-bottom: #f2f2f2 1px solid;
+}
+
+/* Timeline*/
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Linea del Timeliner */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: firebrick;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Contenedor del Timeline */
+  .contenedor {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* Circulos del Timeline */
+  .contenedor::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid firebrick;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Coloca los contenedores a la izquierda */
+  .izquierda {
+    left: 0;
+  }
+  
+  /* Coloca los contenedores a la derecha*/
+  .derecha {
+    left: 50%;
+  }
+  
+  /* Flechas del lado izquierda */
+  .izquierda::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #f2f2f2;
+  }
+  
+  /* Flechas del lado derecho */
+  .derecha::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fija los circulos */
+  .derecha::after {
+    left: -16px;
+  }
+  
+  /* Contenido del Timeline */
+  .content {
+    padding: 20px 30px;
+    background-color: #f2f2f2;
+    position: relative;
+    border-radius: 6px;
+  }
+
+
+@media screen and (max-width: 600px) {
+
+    #parallax {
+        height: 500px;
+    }
+
+    #parallax2 {
+        height: 450px;
+    }
+
+    .salto {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+  /* Coloca el Timeline a la izquierda */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Expande los contenedores al 100% */
+  .contenedor {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Coloca las flechas apuntando a la izquierda */
+  .contenedor::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Fija los circulos */
+  .izquierda::after, .derecha::after {
+  left: 15px;
+  }
+  
+  .derecha {
+  left: 0%;
+  }
+}

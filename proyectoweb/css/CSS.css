@@ -13,6 +13,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h2{
+    color: firebrick;
+}
+
 /*Estilo de la cabecera*/
 #cabecera {
     position: fixed;
@@ -22,6 +26,7 @@ body {
     background-color:white;
     text-align: center; 
     border-bottom: gainsboro 1px solid;
+    z-index: 2;
 }
 
 /*Estilo del header*/
@@ -171,6 +176,7 @@ nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 2;
 }
   
 .overlay-content {
@@ -220,6 +226,7 @@ nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
     background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 2;
 }
   
 .overlayLog-content {

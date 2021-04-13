@@ -1,0 +1,109 @@
+
+/*Estilo del main*/
+#parallax {
+    background-image: url(../media/fotos/alfa/Alfa-Romeo-SSZ.jpg);
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#parallax2 {
+    background-image: url(../media/fotos/otros/imagen_cenec.jpg);
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#parallax h1 {
+    color: #f2f2f2;
+    text-align: center;
+    font-size:50px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding: 25px 50px 25px 50px;
+}
+
+.contenedor {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 45px 10px 45px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+  }
+
+.contenedor_texto {
+    padding: 10px 50px 10px 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.columna_proyecto {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 10px;
+    
+  }
+
+.columna_proyecto img{
+    width: 75%;
+    
+}
+
+.columna_proyecto h3 {
+    margin-top: 0%;
+}
+
+.columna_proyecto p{
+   padding: 0px 150px 0px 150px;
+   margin: 10px;
+   text-align:justify;
+}
+    
+.fila_proyecto:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#logo-cenec{
+    width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+
+  #parallax{
+    height: 500px;
+    background-position:bottom;
+  }
+
+  #parallax2 {
+      height: 450px;
+  }
+
+  .salto {
+      display: none;
+  }
+
+  .columna_proyecto {
+      width: 100%;
+  }
+
+  .columna_proyecto p {
+    padding: 0px;
+    
+  }
+
+  .columna_proyecto img{
+    width: 100%;
+  }
+
+}
