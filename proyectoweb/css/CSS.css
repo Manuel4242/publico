@@ -388,8 +388,12 @@ footer {
     font-size: 12px;
     width: 100%;
     float: left;
-    padding: 25px;
+    padding-bottom: 30px;
     text-align: center;
+}
+
+#copyright p {
+    font-size: 20px;
 }
 
   @media screen and (max-width: 600px) {
