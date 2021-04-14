@@ -77,14 +77,10 @@
   }
   
   /* Coloca los contenedores a la izquierda */
-  .izquierda {
-    left: 0;
-  }
+  .izquierda {left: 0;}
   
   /* Coloca los contenedores a la derecha*/
-  .derecha {
-    left: 50%;
-  }
+  .derecha {left: 50%;}
   
   /* Flechas del lado izquierda */
   .izquierda::before {
@@ -115,9 +111,7 @@
   }
   
   /* Fija los circulos */
-  .derecha::after {
-    left: -16px;
-  }
+  .derecha::after {left: -16px;}
   
   /* Contenido del Timeline */
   .content {
@@ -130,25 +124,17 @@
 
 @media screen and (max-width: 600px) {
 
-    #parallax {
-        height: 500px;
-    }
+    #parallax {height: 500px;}
 
-    #parallax2 {
-        height: 450px;
-    }
+    #parallax2 {height: 450px;}
 
-    .salto {
-        display: none;
-    }
+    .salto {display: none;}
 
 }
 
 @media screen and (max-width: 600px) {
   /* Coloca el Timeline a la izquierda */
-  .timeline::after {
-  left: 31px;
-  }
+  .timeline::after {left: 31px;}
   
   /* Expande los contenedores al 100% */
   .contenedor {
@@ -166,11 +152,8 @@
   }
 
   /* Fija los circulos */
-  .izquierda::after, .derecha::after {
-  left: 15px;
-  }
+  .izquierda::after, .derecha::after {left: 15px;}
   
-  .derecha {
-  left: 0%;
-  }
+  .derecha {left: 0%;}
+  
 }
