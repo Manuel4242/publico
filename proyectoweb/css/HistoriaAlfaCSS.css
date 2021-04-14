@@ -160,9 +160,9 @@
   /* Coloca las flechas apuntando a la izquierda */
   .contenedor::before {
   left: 60px;
-  border: medium solid white;
+  border: medium solid #f2f2f2;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #f2f2f2 transparent transparent;
   }
 
   /* Fija los circulos */
