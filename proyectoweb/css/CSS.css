@@ -103,8 +103,7 @@ nav a:hover {color: firebrick;}
 
 nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
 
-/*Login desplegable*/
-#subnav{
+#subnav, #subnav-art {
     display: none;
     position: absolute;
     left: 0;
@@ -112,12 +111,32 @@ nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
     width: 100%;
     z-index: 1;
     padding: 10px;
-    padding-right: 40px;
     border-top: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
+}
+
+/*prueba subnav-art*/
+#subnav-art{
+    padding-left: 15px;
+    margin-top: 29px;
+    height: 50px;
+}
+
+#subnav-art a{
+    float: left;
+    text-decoration: none;
+    padding: 5px 15px 15px 15px;
+    font-size: 12px;
+}
+
+#art:hover #subnav-art {display: block;}
+
+/*Login desplegable*/
+#subnav {
+    padding-right: 40px;
     margin-top: 10px;
     height: 60px;
-  }
+}
 
 #subnav form {float: right;}
 
