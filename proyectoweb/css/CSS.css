@@ -93,7 +93,7 @@ nav a {
     font-size: 12px;
 }
 
-nav a:hover {color: firebrick;}
+
 
 #nav-login {
     float: right; 
@@ -101,7 +101,7 @@ nav a:hover {color: firebrick;}
     color: grey;
 }
 
-nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
+nav a:hover, nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
 
 #subnav, #subnav-art {
     display: none;
