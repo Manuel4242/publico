@@ -66,13 +66,7 @@
   to {opacity: 1}
 }
 
-
-
-
-
-
-
-
+/*Fin del slider*/
 
 #video{
     position: relative;
@@ -88,7 +82,7 @@
     color: white;
     mix-blend-mode: overlay;
     font-size: 50px;
-    font-variant-ligatures: additional-ligatures;
+    
     background: rgba(0, 0, 0, 0.5); 
 }
 
