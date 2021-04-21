@@ -15,7 +15,7 @@
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 40px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   mix-blend-mode: overlay;
@@ -70,15 +70,15 @@
 }
 
 #texto-video {
-    position: absolute;
-    top: 0;
-    bottom: 5px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    mix-blend-mode: overlay;
-    font-size: 50px;
-    background: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 0;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  mix-blend-mode: overlay;
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.5); 
 }
 
 #texto-video h1 {margin-top: 22%;}
@@ -91,16 +91,16 @@
 }
 
 #alfa h2 {
-  text-align: left;
-  padding-top: 150px;
+  position: absolute;
+  top: 20%;
+  left: 120px;
   font-size: 35px;
-  padding-left:
-  45px;
-  padding-bottom: 5px;
 }
 
 #alfa a {
-  margin-left: 180px;
+  position: absolute;
+  top: 235px; 
+  left: 120px;
 }
 
 #lancia {
