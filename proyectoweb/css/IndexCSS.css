@@ -207,11 +207,33 @@ main {margin-top: 45px;}
   cursor: pointer;
   transition: 0.5s;
   border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+ 
 }
 
-#texto-tienda a:hover {
-  background-color: #f2f2f2;
-  color: firebrick;
+#texto-tienda a span {
+  position: relative;
+  transition: 0.5s;
+}
+
+#texto-tienda a span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#texto-tienda a:hover span {
+  padding-right: 20px;
+}
+
+#texto-tienda a:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 @media screen and (max-width: 600px) {

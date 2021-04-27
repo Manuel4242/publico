@@ -309,7 +309,7 @@ color:firebrick;
 .columna {
     float: left;
     width: 50%;
-    padding: 10px 25px 10px 25px;
+    padding: 25px;
   }
 
 .fila:after {
