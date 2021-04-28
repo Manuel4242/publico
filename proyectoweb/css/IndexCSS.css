@@ -210,7 +210,6 @@ main {margin-top: 45px;}
   display: inline-block;
   text-align: center;
   width: 150px;
- 
 }
 
 #texto-tienda a span {
@@ -242,6 +241,7 @@ main {margin-top: 45px;}
   width: 100%;
   position: relative;
   display: flex;
+  padding: 10px 0px 10px 0px;
 }
 
 #contenedor-video {
@@ -268,6 +268,7 @@ main {margin-top: 45px;}
   height: 33.33%;
   margin-top: auto;
   margin-bottom: auto;
+  cursor: pointer;
 }
 
 .lista-video {width: 50%;}
