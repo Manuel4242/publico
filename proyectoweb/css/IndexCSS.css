@@ -274,7 +274,24 @@ main {margin-top: 45px;}
 .lista-video {width: 50%;}
 
 .lista-video img {width: 100%;}
+/*
+.icono {
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: .5s ease;
+}
 
+.lista-bloque:hover .icono {
+  opacity: 1;
+}
+*/
 .lista-texto {
   width: 50%;
   color: white;
