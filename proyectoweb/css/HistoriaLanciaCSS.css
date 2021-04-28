@@ -1,4 +1,8 @@
 
+h4 {
+    color: firebrick;
+  }
+
 /*Estilo del main*/
 #parallax {
     background-image: url(../media/fotos/lancia/Lancia-1920.jpg);
@@ -9,6 +13,51 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#lema {
+    text-align: center;
+    font-family: 'Pinyon Script';
+    color: grey;
+    font-size: 35px;
+    padding: 25px 0px 10px 0px;
+  }
+  
+  #informacion {
+    width: 100%;
+    display: flex;
+    margin-bottom: 45px;
+  }
+  
+  #informacion-contenedor {
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #f2f2f2;
+  }
+  
+  #Informacion-texto {
+    width: 75%;
+    text-align: justify;
+    padding: 25px;
+    font-size: 20px;
+  }
+  
+  #informacion-columna {
+    width: 25%;
+    display: block;
+    padding-left: 15px;
+  }
+  
+  .informacion-fila {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px;
+  }
+  
+  .informacion-fila a {
+    text-decoration: none; 
+    color: black;
+  }
 
 #parallax2 {
     background-image: url(../media/fotos/lancia/Lancia-037-2.jpg);
