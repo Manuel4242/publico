@@ -14,11 +14,18 @@ h4 {
   background-size: cover;
 }
 
+#lema {
+  text-align: center;
+  font-family: 'Pinyon Script';
+  color: grey;
+  font-size: 35px;
+  padding: 25px 0px 10px 0px;
+}
+
 #informacion {
   width: 100%;
   display: flex;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
 #informacion-contenedor {
@@ -26,22 +33,21 @@ h4 {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  border-top: 1px solid #f2f2f2;
 }
 
 #Informacion-texto {
-  width: 65%;
+  width: 75%;
   text-align: justify;
   padding: 25px;
   font-size: 20px;
 }
 
 #informacion-columna {
-  width: 35%;
+  width: 25%;
   display: block;
   padding-left: 15px;
 }
-
-#escudo img {width: 60%;}
 
 .informacion-fila {
   border-bottom: 1px solid #f2f2f2;
@@ -169,34 +175,50 @@ h4 {
 
     #parallax {height: 500px;}
 
+    #informacion-contenedor {
+      width: 100%;
+      display: block;
+    }
+
+    #Informacion-texto {
+      width: 100%;
+      border-bottom: 1px solid #f2f2f2;
+    }
+
+    #informacion-columna {
+      width: 100%;
+      display: flex;
+    }
+
+    .informacion-fila {
+      border: none;
+    }
+
     #parallax2 {height: 450px;}
 
     .salto {display: none;}
 
-}
+    /* Coloca el Timeline a la izquierda */
+    .timeline::after {left: 31px;}
+    
+    /* Expande los contenedores al 100% */
+    .contenedor {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Coloca las flechas apuntando a la izquierda */
+    .contenedor::before {
+    left: 60px;
+    border: medium solid #f2f2f2;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f2f2f2 transparent transparent;
+    }
 
-@media screen and (max-width: 600px) {
-  /* Coloca el Timeline a la izquierda */
-  .timeline::after {left: 31px;}
-  
-  /* Expande los contenedores al 100% */
-  .contenedor {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  /* Coloca las flechas apuntando a la izquierda */
-  .contenedor::before {
-  left: 60px;
-  border: medium solid #f2f2f2;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #f2f2f2 transparent transparent;
-  }
-
-  /* Fija los circulos */
-  .izquierda::after, .derecha::after {left: 15px;}
-  
-  .derecha {left: 0%;}
+    /* Fija los circulos */
+    .izquierda::after, .derecha::after {left: 15px;}
+    
+    .derecha {left: 0%;}
   
 }
