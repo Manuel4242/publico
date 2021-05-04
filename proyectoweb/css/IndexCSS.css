@@ -271,15 +271,15 @@ main {margin-top: 45px;}
   cursor: pointer;
 }
 
-.lista-video {width: 50%;}
+.lista-video {width: 50%; position: relative;}
 
 .lista-video img {width: 100%;}
-/*
+
 .icono {
   color: white;
   font-size: 45px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -289,9 +289,9 @@ main {margin-top: 45px;}
 }
 
 .lista-bloque:hover .icono {
-  opacity: 1;
+  opacity: 0.5;
 }
-*/
+
 .lista-texto {
   width: 50%;
   color: white;
