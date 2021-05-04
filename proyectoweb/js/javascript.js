@@ -5,6 +5,23 @@ autor: Manuel Carrillo
 fecha: Abril de 2021
 */
 
+//Realiza el efecto de aparición al hacer scroll
+window.addEventListener("scroll", aparecer);
+  
+function aparecer(){
+  var reveals = document.querySelectorAll(".aparecer");
+
+  for(var i = 0; i < reveals.length; i++){
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 50;
+
+    if(revealTop < windowHeight - revealPoint){
+      reveals[i].classList.add("aparecer-resultado");
+    }
+  }
+}
+
 //Acordeón
 var acc = document.getElementsByClassName("acordeon");
 var i;
@@ -103,6 +120,10 @@ function mostrarVideo(n) {
   slides[numeroVideo-1].style.display = "block";  
   dots[numeroVideo-1].className += " active";
 }
+
+
+
+
 
 
 
