@@ -5,6 +5,22 @@ autor: Manuel Carrillo
 fecha: Abril de 2021
 */
 
+//Acordeón
+var acc = document.getElementsByClassName("acordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
 //Oculta la cabecera al bajar la pagina 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -87,3 +103,6 @@ function mostrarVideo(n) {
   slides[numeroVideo-1].style.display = "block";  
   dots[numeroVideo-1].className += " active";
 }
+
+
+

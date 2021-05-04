@@ -14,7 +14,7 @@ h4 {
   background-size: cover;
 }
 
-#lema {
+.lema {
   text-align: center;
   font-family: 'Pinyon Script';
   color: grey;
@@ -81,10 +81,43 @@ h4 {
 .titulo {
   text-align: center;
   padding: 15px;
-  border-bottom: #f2f2f2 1px solid;
 }
 
 /* Timeline*/
+.acordeon {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #f2f2f2;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.active, .acordeon:hover {
+  background-color: #f2f2f2;
+  color: firebrick;
+}
+
+.acordeon:after {
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease-out;
+}
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -173,6 +206,28 @@ h4 {
     position: relative;
     border-radius: 6px;
   }
+
+  #parallax3 {
+    background-image: url(../media/fotos/alfa/Alfa-Romeo-Spider-1.jpg);
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .cita {
+    color: grey;
+    text-align: center;
+    font-size: 35px;
+    padding: 25px 0px 45px 0px;
+    border-top: 1px solid #f2f2f2;
+  }
+
+  .cita-texto {font-family: 'Pinyon Script';}
+
+  .cita-autor {font-size: 20px; color:#404040;}
 
 
 @media screen and (max-width: 600px) {
