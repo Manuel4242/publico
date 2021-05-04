@@ -230,6 +230,48 @@ h4 {
   .cita-autor {font-size: 20px; color:#404040;}
 
 
+  .fila-articulos {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 50px 0px;
+}
+
+.bloque-articulos {display: flex;}
+
+.articulos {display: block}
+
+.imagen-articulo {width: 100%;}
+
+.imagen-articulo img{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-articulo {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloque-articulos a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
 
     #parallax {height: 500px;}
@@ -279,5 +321,15 @@ h4 {
     .izquierda::after, .derecha::after {left: 15px;}
     
     .derecha {left: 0%;}
+
+    .fila-articulos {width: 100%;}
+
+    .bloque-articulos {display: block;}
+
+    .articulos {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+    }
   
 }
