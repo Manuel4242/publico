@@ -8,3 +8,7 @@ fecha: Abril de 2021
 .fila{
     display: flex;
 }
+
+#contenido-tienda {
+    display: none;
+}

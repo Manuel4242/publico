@@ -36,6 +36,7 @@
                 <a href="index.html">INICIO</a>
                 <a href="./html/Tienda.html">TIENDA</a>
                 <a href="#">NOTICIAS</a>
+                <div id="mensaje"></div>
                 <div id="art">
                     <a href="#">ARTICULOS</a>
                     <div id="subnav-art">
@@ -53,12 +54,15 @@
                 <i class="fa fa-user"></i>
                 <!--Barra de login oculta-->
                 <div id="subnav">
-                    <form action="">
-                        <input type="text" id="user" name="user" placeholder="Introduzca su nombre de usuario">
+                    <form name="formularioIngreso" onsubmit="return ingresar()">
+                        <input type="text" id="user" name="usuario" placeholder="Introduzca su nombre de usuario">
                         <input type="password" id="contraseña" name="contraseña" placeholder="Introduzca su contraseña">
                         <input type="submit" value="ENVIAR">
                     </form>
                 </div>
+            </div>
+            <div id="nav-logout" onclick="return salir()">
+                <i class="fa fa-sign-out"></i>
             </div>
         </nav>
     </div>
@@ -135,7 +139,7 @@
 
     <main>
         <!--Seccion articulos-->
-        <h2 class="aparecer">Ultimos Artículos</h2>
+        <h2>Ultimos Artículos</h2>
 
         <div class="fila-articulos aparecer">
             <div class="bloque-articulos">
@@ -204,8 +208,8 @@
         </div>
 
         <!--Seccion tienda-->
-        <div id="tienda" class="aparecer">
-            <div id="texto-tienda">
+        <div id="tienda" >
+            <div id="texto-tienda" class="aparecer">
                 <p>Accede a la tienda</p>
                 <a href="./html/Tienda.html"><span>ENTRAR</span></a>
             </div>
@@ -218,10 +222,10 @@
         <p>relleno</p>
 
         <!--Bloque de videos-->
-        <div id="bloque-video" class="aparecer">
+        <div id="bloque-video">
             <div id="contenedor-video" >
 
-                <div id="video-principal">
+                <div id="video-principal" class="aparecer">
                     <div class="slider-video">
                         <iframe width="100%" height="450px" src="https://www.youtube.com/embed/awArTC8iQ3Q?controls=1"
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay"
@@ -241,7 +245,7 @@
                     </div>
                 </div>
 
-                <div id="videos-secundarios">
+                <div id="videos-secundarios" class="aparecer">
                     <div class="lista-bloque" onclick="videoActual(1)">
                         <div class="lista-video">
                             <img src="./media/fotos/youtube/Ferrari-330-P4.jpg" alt="Ferrari 330 P4">
@@ -283,6 +287,7 @@
         </div>
         <p>relleno</p>
         <p>relleno</p>
+        <div id="mensaje"></div>
         <p>relleno</p>
         <p>relleno</p>
 

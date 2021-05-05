@@ -93,12 +93,23 @@ nav a {
     font-size: 12px;
 }
 
-
+#mensaje {
+    float: right;
+    font-size: 15px;
+}
 
 #nav-login {
     float: right; 
     width: 5%; 
     color: grey;
+}
+
+#nav-logout {
+    float: right;
+    width: 5%;
+    color: grey;
+    display: none;
+    cursor: pointer;
 }
 
 nav a:hover, nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}

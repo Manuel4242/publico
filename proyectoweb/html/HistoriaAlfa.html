@@ -36,6 +36,9 @@
                 <a href="../index.html">INICIO</a>
                 <a href="Tienda.html">TIENDA</a>
                 <a href="#news">NOTICIAS</a>
+                <!--prueba-->
+                <div id="mensaje"></div>
+                <!--Fin de prueba-->
                 <div id="art">
                     <a href="#">ARTICULOS</a>
                     <div id="subnav-art">
@@ -53,12 +56,15 @@
                 <i class="fa fa-user"></i>
                 <!--Barra de login oculta-->
                 <div id="subnav">
-                    <form action="">
-                        <input type="text" id="user" name="user" placeholder="Introduzca su nombre de usuario">
+                    <form name="formularioIngreso" onsubmit="return ingresar()">
+                        <input type="text" id="user" name="usuario" placeholder="Introduzca su nombre de usuario">
                         <input type="password" id="contraseña" name="contraseña" placeholder="Introduzca su contraseña">
                         <input type="submit" value="ENVIAR">
                     </form>
                 </div>
+            </div>
+            <div id="nav-logout" onclick="return salir()">
+                <i class="fa fa-sign-out"></i>
             </div>
         </nav>
     </div>
@@ -103,7 +109,7 @@
             <p>"La meccanica delle emozioni"</p>
         </div>
 
-        <div id="informacion" class="aparecer">
+        <div id="informacion">
             <div id="informacion-contenedor">
                 <div id="Informacion-texto">
                     La historia de Alfa Romeo empieza en 1910, cuando Ugo Stella compra las acciones de la Sociedad
@@ -120,7 +126,7 @@
                     automovilismo en todo el mundo, uniendo, como ninguna otra, pasión y funcionalidad.
                 </div>
 
-                <div id="informacion-columna">
+                <div id="informacion-columna" class="aparecer">
                     <div class="informacion-fila">
                         <h4>AÑO DE FUNDACIÓN:</h4>
                         <p>1910</p>
@@ -141,7 +147,7 @@
         <div id="parallax2"></div>
 
         <!--Línea de tiempo-->
-        <div class="titulo aparecer">
+        <div class="titulo">
             <h2>Alfa Romeo a través de los años</h2>
         </div>
         <div class="aparecer">
@@ -877,7 +883,7 @@
 
         <div id="parallax3"></div>
 
-        <div class="titulo aparecer">
+        <div class="titulo">
             <h2>Ultimos Artículos</h2>
         </div>
 

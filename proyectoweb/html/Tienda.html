@@ -10,7 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Pinyon Script' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="..\css\CSS.css">
-    <link rel="stylesheet" href="TiendaCSS.css">
+    <link rel="stylesheet" href="..\css\TiendaCSS.css">
     <title>Mi Clásico Italiano</title>
 </head>
 
@@ -36,6 +36,7 @@
                 <a href="../index.html">INICIO</a>
                 <a href="Tienda.html">TIENDA</a>
                 <a href="#news">NOTICIAS</a>
+                <div style="float: right; font-size: 15px;" id="mensaje"></div>
                 <div id="art">
                     <a href="#">ARTICULOS</a>
                     <div id="subnav-art">
@@ -53,12 +54,15 @@
                 <i class="fa fa-user"></i>
                 <!--Barra de login oculta-->
                 <div id="subnav">
-                    <form action="">
-                        <input type="text" id="user" name="user" placeholder="Introduzca su nombre de usuario">
+                    <form name="formularioIngreso" onsubmit="return ingresar()">
+                        <input type="text" id="user" name="usuario" placeholder="Introduzca su nombre de usuario">
                         <input type="password" id="contraseña" name="contraseña" placeholder="Introduzca su contraseña">
                         <input type="submit" value="ENVIAR">
                     </form>
                 </div>
+            </div>
+            <div id="nav-logout" onclick="return salir()">
+                <i class="fa fa-sign-out"></i>
             </div>
         </nav>
     </div>
@@ -90,8 +94,20 @@
         </div>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <main>
+    <div id="advertencia">
+        <p>Debes ingresar para ver el contenido</p>
+    </div>
+
+    <main id="contenido-tienda">
         <div class="fila">
             <div class="columna">
 

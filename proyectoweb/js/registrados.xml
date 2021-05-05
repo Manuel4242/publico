@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registrados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/manue/Desktop/DAM/Lenguaje%20de%20marcas/Ejercicios/XML/registradosXSD.xsd">
+	<usuario nro="1">
+		<nombre>USR1</nombre>
+		<clave>CLAVE1</clave>
+	</usuario>
+	
+	<usuario nro="2">
+		<nombre>USR2</nombre>
+		<clave>CLAVE2</clave>
+	</usuario>
+		
+	<usuario nro="3">
+		<nombre>USR3</nombre>
+		<clave>CLAVE3</clave>
+	</usuario>
+		
+	<usuario nro="4">
+		<nombre>USR4</nombre>
+		<clave>CLAVE4</clave>
+	</usuario>
+	
+	<usuario nro="5">
+		<nombre>MANUEL</nombre>
+		<clave>CARRILLO</clave>
+	</usuario>
+
+</registrados>
+
