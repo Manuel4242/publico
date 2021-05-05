@@ -5,7 +5,8 @@ autor: Manuel Carrillo
 fecha: Abril de 2021
 */
 
-//Prueba
+//Funciones de Login
+//Función que comprueba si hay un usuario conectado, mostrando el icono de login o logout según el caso
 function comprobar() {
   if (sessionStorage.getItem("usuario").length > 0) {
     document.getElementById("nav-login").style.display = "none";
@@ -15,8 +16,10 @@ function comprobar() {
   }
 }
 
+//Muestra en el bloque de mensaje el nombre del usuario conectado
 document.getElementById("mensaje").innerHTML = sessionStorage.getItem("usuario");
 
+//Función que extrae del formulario de ingreso el nombre y la contraseña del usuario
 function ingresar() {
   if (typeof (Storage) !== "undefined") {
     // Almacena un valor usando el método setItem del objeto localStorage
@@ -29,6 +32,7 @@ function ingresar() {
   return false;
 }
 
+//Función que desconecta al usuario, vaciando la variable del session storage
 function salir() {
   if (typeof (Storage) !== "undefined") {
     sessionStorage.removeItem("usuario");
@@ -40,6 +44,7 @@ function salir() {
   return false;
 }
 
+//Función que comprueba si hay un usuario conectado para mostrar el contenido de la tienda
 function darAcceso() {
   if (sessionStorage.getItem("usuario").length > 0) {
     document.getElementById("advertencia").style.display = "none";
@@ -47,20 +52,17 @@ function darAcceso() {
   }
 }
 
-window.onload=function lanzadera(){
+//Lanza las funciones de comprobación al cargar la página
+window.onload = function lanzadera() {
   comprobar();
   darAcceso();
 }
 
-
-
-//Fin de prueba
-
-
-
+//Funciones de la página
 //Realiza el efecto de aparición al hacer scroll
 window.addEventListener("scroll", aparecer);
 
+//Funcion que, al llegar al nivel de visualización del objeto, añade una clase de estilo haciendolo aparecer con una animación
 function aparecer() {
   var reveals = document.querySelectorAll(".aparecer");
 
@@ -75,7 +77,7 @@ function aparecer() {
   }
 }
 
-//Acordeón
+//Acordeón de la línea de tiempo
 var acc = document.getElementsByClassName("acordeon");
 var i;
 
@@ -91,32 +93,38 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-//Oculta la cabecera al bajar la pagina 
+//Función que oculta y muestra la cabecera
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
+  //Muestra la cabecera si detecta scroll hacia arriba
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("cabecera").style.top = "0";
   } else {
+    //Oculta la cabecera si detecta scroll hacia abajo
     document.getElementById("cabecera").style.top = "-130px";
   }
   prevScrollpos = currentScrollPos;
 }
 
 //Muestra y oculta el menú desplegable
+//Función que abre el menú desplegable
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
 
+//Función que cierra el menú desplegable
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
 //Muestra y oculta el login desplegable
+//Función que abre el login desplegable
 function openLog() {
   document.getElementById("myLog").style.width = "100%";
 }
 
+//Función que cierra el login desplegable
 function closeLog() {
   document.getElementById("myLog").style.width = "0%";
 }
@@ -138,6 +146,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  //Controla los valores extremos
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
@@ -151,6 +160,7 @@ function showSlides(n) {
 }
 
 //Bloque videos
+//Función del slider adaptada para mostrar los vídeos de la página principal
 var numeroVideo = 1;
 mostrarVideo(numeroVideo);
 

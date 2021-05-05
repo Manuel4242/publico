@@ -7,9 +7,13 @@
     <meta name="keywords" content="Coches, Coches clasicos, Clasicos italianos, Automovilismo">
     <meta name="author" content="Manuel Carrillo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace para la fuente de Google "Pinyon Script"-->
     <link href='https://fonts.googleapis.com/css?family=Pinyon Script' rel='stylesheet'>
+    <!--Enlace para el uso de iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS general-->
     <link rel="stylesheet" href=".\css\CSS.css">
+    <!--CSS de la página-->
     <link rel="stylesheet" href=".\css\IndexCSS.css">
     <title>Mi Clásico Italiano</title>
 </head>
@@ -19,16 +23,20 @@
     <div id="cabecera">
         <!--Header-->
         <header>
+            <!--Menú hamburguesa oculto-->
             <div id="menu">
                 <span onclick="openNav()">&#9776; </span>
             </div>
+            <!--Logo de la página con enlace al index-->
             <div id="logo">
                 <a href="index.html">Mi Clásico Italiano</a>
             </div>
-            
+
+            <!--Menú de login oculto-->
             <div id="login" onclick="openLog()">
                 <i class="fa fa-user"></i>
             </div>
+            <!--Icono de logout oculto-->
             <div id="logout" onclick="return salir()">
                 <i class="fa fa-sign-out"></i>
             </div>
@@ -36,6 +44,7 @@
         <!--Barra de navegación-->
         <nav>
             <div id="nav-bar">
+                <!--Enlaces-->
                 <a href="index.html">INICIO</a>
                 <a href="./html/Tienda.html">TIENDA</a>
                 <a href="#">NOTICIAS</a>
@@ -53,6 +62,7 @@
                     </div>
                 </div>
             </div>
+            <!--Icono de login-->
             <div id="nav-login">
                 <i class="fa fa-user"></i>
                 <!--Barra de login oculta-->
@@ -64,6 +74,7 @@
                     </form>
                 </div>
             </div>
+            <!--Icono de logout oculto de la barra de navegación-->
             <div id="nav-logout" onclick="return salir()">
                 <i class="fa fa-sign-out"></i>
             </div>
@@ -101,7 +112,7 @@
 
     <!--Slider-->
     <div class="slideshow-container">
-
+        <!--Video principal de la pagina-->
         <div class="mySlides fade">
             <div id="video">
                 <video width="100%" height="auto" autoplay muted loop id="video">
@@ -114,6 +125,7 @@
             </div>
         </div>
 
+        <!--Alfa Romeo-->
         <div class="mySlides fade">
             <div id="alfa">
                 <h2>Conozca la história de Alfa Romeo</h2>
@@ -121,6 +133,7 @@
             </div>
         </div>
 
+        <!--Lancia-->
         <div class="mySlides fade">
             <div id="lancia">
                 <h2>Conozca la história de Lancia</h2>
@@ -128,11 +141,13 @@
             </div>
         </div>
 
+        <!--Flechas de izquierda y derecha-->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
     </div>
 
+    <!--Puntos de referencia del slider-->
     <div id="puntos" style="text-align:center">
         <br>
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -140,10 +155,12 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
+    <!--Contenido principal-->
     <main>
         <!--Seccion articulos-->
         <h2>Ultimos Artículos</h2>
 
+        <!--Primera fila de articulos-->
         <div class="fila-articulos aparecer">
             <div class="bloque-articulos">
                 <a href="#">
@@ -180,6 +197,7 @@
             </div>
         </div>
 
+        <!--Segunda fila de articulos-->
         <div class="fila-articulos aparecer">
             <div class="bloque-articulos">
                 <div class="articulos">
@@ -228,6 +246,7 @@
         <div id="bloque-video">
             <div id="contenedor-video" >
 
+                <!--Video a reproducir-->
                 <div id="video-principal" class="aparecer">
                     <div class="slider-video">
                         <iframe width="100%" height="450px" src="https://www.youtube.com/embed/awArTC8iQ3Q?controls=1"
@@ -248,6 +267,7 @@
                     </div>
                 </div>
 
+                <!--Lista de videos a seleccionar-->
                 <div id="videos-secundarios" class="aparecer">
                     <div class="lista-bloque" onclick="videoActual(1)">
                         <div class="lista-video">
@@ -323,6 +343,7 @@
         </div>
     </div>
 
+    <!--Documentación y enlaces-->
     <footer>
         <div id="documentacion">
             <div class="doc-columna">
@@ -368,13 +389,16 @@
             </div>
         </div>
     </footer>
+
+    <!--Copyright-->
     <div id="copyright">
         <p>MI CLÁSICO ITALIANO</p>
         &copy; 2021 Manuel Carrillo
     </div>
-
+    
 </body>
 
+<!--Enlace a JavaScript-->
 <script src=".\js\javascript.js"></script>
 
 </html>

@@ -1,9 +1,16 @@
+/*
+CSS de la página de Alfa Romeo
+web o pagina: Proyecto Final
+autor: Manuel Carrillo
+fecha: Febrero de 2021
+*/
 
 h4 {
   color: firebrick;
 }
 
 /*Estilo del main*/
+/*Imagen fija 1*/
 #parallax {
   background-image: url(../media/fotos/alfa/Alfa-Romeo-Alfetta-1.jpg);
   width: 100%;
@@ -14,6 +21,15 @@ h4 {
   background-size: cover;
 }
 
+#parallax h1 {
+  color: #f2f2f2;
+  text-align: center;
+  font-size:50px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  padding: 25px 50px 25px 50px;
+}
+
 .lema {
   text-align: center;
   font-family: 'Pinyon Script';
@@ -22,6 +38,7 @@ h4 {
   padding: 25px 0px 10px 0px;
 }
 
+/*Estilo de la información general*/
 #informacion {
   width: 100%;
   display: flex;
@@ -59,23 +76,15 @@ h4 {
   color: black;
 }
 
+/*Imagen fija 2*/
 #parallax2 {
-    background-image: url(../media/fotos/alfa/Alfa-Romeo-33-Stradale-9.jpg);
-    width: 100%;
-    height: 600px;
-    background-attachment: fixed;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
-#parallax h1 {
-    color: #f2f2f2;
-    text-align: center;
-    font-size:50px;
-    font-weight: 100;
-    letter-spacing: 5px;
-    padding: 25px 50px 25px 50px;
+  background-image: url(../media/fotos/alfa/Alfa-Romeo-33-Stradale-9.jpg);
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .titulo {
@@ -119,123 +128,123 @@ h4 {
 }
 
 .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .timeline img {
-    width: 100%;
-  }
+.timeline img {width: 100%;}
   
-  /* Linea del Timeliner */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: firebrick;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
+/* Linea del Timeliner */
+.timeline::after {
+ content: '';
+ position: absolute;
+ width: 6px;
+ background-color: firebrick;
+ top: 0;
+ bottom: 0;
+ left: 50%;
+ margin-left: -3px;
+}
   
-  /* Contenedor del Timeline */
-  .contenedor {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
+/* Contenedor del Timeline */
+.contenedor {
+ padding: 10px 40px;
+ position: relative;
+ background-color: inherit;
+ width: 50%;
+}
   
-  /* Circulos del Timeline */
-  .contenedor::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid firebrick;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
+/* Circulos del Timeline */
+.contenedor::after {
+ content: '';
+ position: absolute;
+ width: 25px;
+ height: 25px;
+ right: -17px;
+ background-color: white;
+ border: 4px solid firebrick;
+ top: 15px;
+ border-radius: 50%;
+ z-index: 1;
+}
   
-  /* Coloca los contenedores a la izquierda */
-  .izquierda {left: 0;}
+/* Coloca los contenedores a la izquierda */
+.izquierda {left: 0;}
   
-  /* Coloca los contenedores a la derecha*/
-  .derecha {left: 50%;}
+/* Coloca los contenedores a la derecha*/
+ .derecha {left: 50%;}
   
-  /* Flechas del lado izquierda */
-  .izquierda::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #f2f2f2;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #f2f2f2;
-  }
+/* Flechas del lado izquierda */
+.izquierda::before {
+ content: " ";
+ height: 0;
+ position: absolute;
+ top: 22px;
+ width: 0;
+ z-index: 1;
+ right: 30px;
+ border: medium solid #f2f2f2;
+ border-width: 10px 0 10px 10px;
+ border-color: transparent transparent transparent #f2f2f2;
+}
   
-  /* Flechas del lado derecho */
-  .derecha::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #f2f2f2;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #f2f2f2 transparent transparent;
-  }
+/* Flechas del lado derecho */
+.derecha::before {
+ content: " ";
+ height: 0;
+ position: absolute;
+ top: 22px;
+ width: 0;
+ z-index: 1;
+ left: 30px;
+ border: medium solid #f2f2f2;
+ border-width: 10px 10px 10px 0;
+ border-color: transparent #f2f2f2 transparent transparent;
+}
   
-  /* Fija los circulos */
-  .derecha::after {left: -16px;}
+/* Fija los circulos */
+.derecha::after {left: -16px;}
   
-  /* Contenido del Timeline */
-  .content {
-    padding: 5px 30px 20px 30px;
-    background-color: #f2f2f2;
-    position: relative;
-    border-radius: 6px;
-  }
+/* Contenido del Timeline */
+.content {
+ padding: 5px 30px 20px 30px;
+ background-color: #f2f2f2;
+ position: relative;
+ border-radius: 6px;
+}
 
-  #parallax3 {
-    background-image: url(../media/fotos/alfa/Alfa-Romeo-Spider-1.jpg);
-    width: 100%;
-    height: 600px;
-    background-attachment: fixed;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
-  }
+/*Imagen fija 3*/
+#parallax3 {
+ background-image: url(../media/fotos/alfa/Alfa-Romeo-Spider-1.jpg);
+ width: 100%;
+ height: 600px;
+ background-attachment: fixed;
+ background-position:center;
+ background-repeat: no-repeat;
+ background-size:cover;
+}
 
-  .cita {
-    color: grey;
-    text-align: center;
-    font-size: 35px;
-    padding: 25px 0px 45px 0px;
-    border-top: 1px solid #f2f2f2;
-  }
+/*Estilo de la cita*/
+.cita {
+ color: grey;
+ text-align: center;
+ font-size: 35px;
+ padding: 25px 0px 45px 0px;
+ border-top: 1px solid #f2f2f2;
+}
 
-  .cita-texto {font-family: 'Pinyon Script';}
+.cita-texto {font-family: 'Pinyon Script';}
 
-  .cita-autor {font-size: 20px; color:#404040;}
+.cita-autor {font-size: 20px; color:#404040;}
 
 
-  .fila-articulos {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0px 50px 0px;
+.fila-articulos {
+ display: block;
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 10px 0px 50px 0px;
 }
 
 .bloque-articulos {display: flex;}
@@ -245,17 +254,17 @@ h4 {
 .imagen-articulo {width: 100%;}
 
 .imagen-articulo img{
-    width: 95%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .texto-articulo {
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bloque-articulos a {
@@ -263,64 +272,65 @@ h4 {
   color: black;
 }
 
+/*Estilo por debajo de 600px*/
 @media screen and (max-width: 600px) {
 
-    #parallax {height: 500px;}
+  #parallax {height: 500px;}
 
-    #informacion-contenedor {
-      width: 100%;
-      display: block;
-    }
+  #informacion-contenedor {
+    width: 100%;
+    display: block;
+  }
 
-    #Informacion-texto {
-      width: 100%;
-      border-bottom: 1px solid #f2f2f2;
-    }
+  #Informacion-texto {
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+  }
 
-    #informacion-columna {
-      width: 100%;
-      display: flex;
-    }
+  #informacion-columna {
+    width: 100%;
+    display: flex;
+  }
 
-    .informacion-fila {
-      border: none;
-    }
+  .informacion-fila {
+    border: none;
+  }
 
-    #parallax2 {height: 450px;}
+  #parallax2 {height: 450px;}
 
-    .salto {display: none;}
+  .salto {display: none;}
 
-    /* Coloca el Timeline a la izquierda */
-    .timeline::after {left: 31px;}
+  /* Coloca el Timeline a la izquierda */
+  .timeline::after {left: 31px;}
     
-    /* Expande los contenedores al 100% */
-    .contenedor {
+  /* Expande los contenedores al 100% */
+  .contenedor {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-    }
+  }
     
-    /* Coloca las flechas apuntando a la izquierda */
-    .contenedor::before {
+  /* Coloca las flechas apuntando a la izquierda */
+  .contenedor::before {
     left: 60px;
     border: medium solid #f2f2f2;
     border-width: 10px 10px 10px 0;
     border-color: transparent #f2f2f2 transparent transparent;
-    }
+  }
 
-    /* Fija los circulos */
-    .izquierda::after, .derecha::after {left: 15px;}
+  /* Fija los circulos */
+  .izquierda::after, .derecha::after {left: 15px;}
     
-    .derecha {left: 0%;}
+  .derecha {left: 0%;}
 
-    .fila-articulos {width: 100%;}
+  .fila-articulos {width: 100%;}
 
-    .bloque-articulos {display: block;}
+  .bloque-articulos {display: block;}
 
-    .articulos {
-        display: flex;
-        width: 100%;
-        padding: 15px;
-    }
+  .articulos {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+  }
   
 }

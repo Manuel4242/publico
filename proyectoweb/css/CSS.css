@@ -1,5 +1,5 @@
 /*
-CSS 
+CSS general
 web o pagina: Proyecto Final
 autor: Manuel Carrillo
 fecha: Abril de 2021
@@ -398,28 +398,22 @@ footer {
 
 #copyright p {font-size: 20px;}
 
+/*Estilo de los objetos escondidos*/
 .aparecer{
     position: relative;
     transform: translateY(50px);
     opacity: 0;
     transition: all 1.5s ease;
-  }
-  
-  .aparecer-resultado{
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  @media screen and (max-height: 450px) {
-    .overlayLog a {font-size: 20px}
-    .overlayLog .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
 }
 
-  @media screen and (max-width: 600px) {
+/*Estilo de los objetos que aparecen al hacer scroll*/
+.aparecer-resultado{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*Estilo por debajo de 600px*/
+@media screen and (max-width: 600px) {
 
     #menu {visibility: visible;}
 
@@ -440,4 +434,14 @@ footer {
 
     .doc-columna {width: 100%;}
     
+}
+
+/*Estilo por debajo de 450px*/
+@media screen and (max-height: 450px) {
+    .overlayLog a {font-size: 20px}
+    .overlayLog .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
 }

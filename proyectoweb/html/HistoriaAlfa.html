@@ -7,9 +7,13 @@
     <meta name="keywords" content="Coches, Coches clasicos, Clasicos italianos, Automovilismo">
     <meta name="author" content="Manuel Carrillo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace para la fuente de Google "Pinyon Script"-->
     <link href='https://fonts.googleapis.com/css?family=Pinyon Script' rel='stylesheet'>
+    <!--Enlace para el uso de iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS general-->
     <link rel="stylesheet" href="..\css\CSS.css">
+    <!--CSS de la página-->
     <link rel="stylesheet" href="..\css\HistoriaAlfaCSS.css">
     <title>Mi Clásico Italiano</title>
 </head>
@@ -19,16 +23,20 @@
     <div id="cabecera">
         <!--Header-->
         <header>
+            <!--Menú hamburguesa oculto-->
             <div id="menu">
                 <span onclick="openNav()">&#9776; </span>
             </div>
+            <!--Logo de la página con enlace al index-->
             <div id="logo">
                 <a href="../index.html">Mi Clásico Italiano</a>
             </div>
-            
+
+            <!--Menú de login oculto-->
             <div id="login" onclick="openLog()">
                 <i class="fa fa-user"></i>
             </div>
+            <!--Icono de logout oculto-->
             <div id="logout" onclick="return salir()">
                 <i class="fa fa-sign-out"></i>
             </div>
@@ -36,12 +44,11 @@
         <!--Barra de navegación-->
         <nav>
             <div id="nav-bar">
+                <!--Enlaces-->
                 <a href="../index.html">INICIO</a>
                 <a href="Tienda.html">TIENDA</a>
                 <a href="#news">NOTICIAS</a>
-                <!--prueba-->
                 <div id="mensaje"></div>
-                <!--Fin de prueba-->
                 <div id="art">
                     <a href="#">ARTICULOS</a>
                     <div id="subnav-art">
@@ -55,6 +62,7 @@
                     </div>
                 </div>
             </div>
+            <!--Icono de login-->
             <div id="nav-login">
                 <i class="fa fa-user"></i>
                 <!--Barra de login oculta-->
@@ -66,6 +74,7 @@
                     </form>
                 </div>
             </div>
+            <!--Icono de logout oculto de la barra de navegación-->
             <div id="nav-logout" onclick="return salir()">
                 <i class="fa fa-sign-out"></i>
             </div>
@@ -112,6 +121,7 @@
             <p>"La meccanica delle emozioni"</p>
         </div>
 
+        <!--Información general-->
         <div id="informacion">
             <div id="informacion-contenedor">
                 <div id="Informacion-texto">
@@ -147,6 +157,7 @@
             </div>
         </div>
 
+        <!--Imagen fija-->
         <div id="parallax2"></div>
 
         <!--Línea de tiempo-->
@@ -154,742 +165,831 @@
             <h2>Alfa Romeo a través de los años</h2>
         </div>
         <div class="aparecer">
-        <button class="acordeon">1910s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1910</h2>
-                        <p>El aristócrata italiano Ugo Stella adquiere las participaciones de la Società Italiana
-                            Automobili
-                            Darracq, fundada en 1906 y localizada en la Strada del Portello número 95 en Milan.
-                            El 24 de junio de 1910, Stella relanza la fabica y la renombra como Anonima Lombarda
-                            Fabbrica
-                            Automobili – A.L.F.A. or “Alfa”.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/1910.jpg" alt="Anonima Lombarda Fabbrica Automobili">
+            <button class="acordeon">1910s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1910</h2>
+                            <p>El aristócrata italiano Ugo Stella adquiere las participaciones de la Società Italiana
+                                Automobili
+                                Darracq, fundada en 1906 y localizada en la Strada del Portello número 95 en Milan.
+                                El 24 de junio de 1910, Stella relanza la fabica y la renombra como Anonima Lombarda
+                                Fabbrica
+                                Automobili – A.L.F.A. or “Alfa”.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/1910.jpg" alt="Anonima Lombarda Fabbrica Automobili">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1910</h2>
+                            <p>Giuseppe Merosi, el joven director técnico de Alfa, diseña el 24HP, el primer vehiculo
+                                creado
+                                en
+                                la linea de producción en Portello, Milan. Equipaba un motor monobloque de 4.1 litros,
+                                con
+                                un
+                                solo eje de transmisión y alcanzaba una velocidad máxima de 100 kmH. </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-24HP.jfif" alt="Alfa Romeo 24HP">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1915</h2>
+                            <p>Nicola Romeo adquiere Alfa, que comienza la producción de motores de avión y compresores
+                                portatiles durante la I Guerra Mundial. La compañia pasa a llamarse Alfa-Romeo Milano.
+                                Alfa
+                                Romeo volvería a la producción de automóviles tras la guerra.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Nicola-Romeo.jfif" alt="Nicola Romeo">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1910</h2>
-                        <p>Giuseppe Merosi, el joven director técnico de Alfa, diseña el 24HP, el primer vehiculo creado
-                            en
-                            la linea de producción en Portello, Milan. Equipaba un motor monobloque de 4.1 litros, con
-                            un
-                            solo eje de transmisión y alcanzaba una velocidad máxima de 100 kmH. </p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-24HP.jfif" alt="Alfa Romeo 24HP">
+            </div>
+            <button class="acordeon">1920s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1922</h2>
+                            <p>Alfa Romeo lanza el RL, con un motor de seis cilindros en línea, balancín y
+                                válvulas en la parte superior, y frenos en las 4 ruedas. El Alfa Romeo RL fue un gran
+                                éxito
+                                y
+                                fue
+                                considerado como la obra maestra de Giuseppe Merosi. Llegaron pedidos internacionales y
+                                se
+                                construyeron 2.640 automóviles.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-RL.jpg" alt="Alfa Romeo RL">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1923</h2>
+                            <p>El legendario piloto de carreras Ugo Sivocci conquista la Targa Florio por
+                                primera vez, marcaron el inicio del éxito en las carreras de Alfa Romeo. Como
+                                preparación,
+                                el
+                                piloto pintó un cuadrado blanco con un “Quadrifoglio”, un trébol de cuatro hojas, en la
+                                parte
+                                delantera de su Alfa Romeo
+                                RL. Tras su muerte en Monza, todos los coches de carreras de Alfa Romeo han llevado el
+                                simbolo
+                                del “Quadrifoglio” sobre un triangulo blanco. </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Quadrifoglio.jpg" alt="Símbolo del Quadrifoglio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1924</h2>
+                            <p>Alfa Romeo lanza el P2, un monoplaza de competición con motor sobrealimentado de 8
+                                cilindros
+                                y
+                                dos carburadores de inducción forzada diseñado por Vittorio Jano. El P2 se convirtió en
+                                uno
+                                de
+                                los
+                                mejores automóviles competición de la década de 1920.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-P2.jpg" alt="Alfa Romeo P2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1925</h2>
+                            <p>Gastone Brilli Peri gana el primer Campeonato del Mundo de Alfa Romeo con el Gran Premio
+                                Tipo
+                                P2.
+                                Cuatro Alfa Romeos cruzaron la línea de meta, uno tras otro, con una ventaja de 45
+                                minutos sobre el quinto piloto. La espectacular victoria le dio a Alfa Romeo una razón
+                                para
+                                agregar la corona de laurel a su
+                                logotipo.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Grand-Prix-1925.jpg" alt="Gran Premio de 1925">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1928</h2>
+                            <p>Alfa Romeo Gana su primera Mille Miglia, una carrera de resistencia en carretera abierta
+                                que
+                                consta de mil millas en forma de ocho que recorre las ciudades italianas de Brescia y
+                                Roma.
+                                Campari y Ramponi ganaron la carrera en tiempo récord con el nuevo Alfa Romeo 6C 1500.
+                            </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Mille-Miglia.jpg" alt="Mille Miglia de 1928">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1929</h2>
+                            <p>Enzo Ferrari establece su equipo de carreras Scuderia Ferrari en Modena, Italia,
+                                incluyendo a
+                                más
+                                de 40 de los mejores pilotos de carreras de la época, incluidos Ascari, Campari y
+                                Nuvolari.
+                                El
+                                equipo logró todos los logros de carreras de Alfa Romeo de la epoca.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Nicola-Romeo-Enzo-Ferrari.jpg" alt="Enzo Ferrari">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1915</h2>
-                        <p>Nicola Romeo adquiere Alfa, que comienza la producción de motores de avión y compresores
-                            portatiles durante la I Guerra Mundial. La compañia pasa a llamarse Alfa-Romeo Milano. Alfa
-                            Romeo volvería a la producción de automóviles tras la guerra.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Nicola-Romeo.jfif" alt="Nicola Romeo">
+            </div>
+            <button class="acordeon">1930s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1930</h2>
+                            <p>Alfa Romeo presenta el 6C 1750 en el Salón del Automóvil de Roma de 1929. Era una
+                                variación
+                                del
+                                6C 1500,
+                                con un motor más potente. Su rendimiento excepcional quedó demostrado al año siguiente
+                                cuando
+                                Nuvolari y Guidotti ganaron la carrera de Mille Miglia con un promedio de velocidad
+                                récord
+                                de 62
+                                mph.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-6C-1.jfif" alt="Alfa Romeo 6C">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1931</h2>
+                            <p>Alfa Romeo obtiene la victoria por primera vez en Le Mans con el 8C2300. Con un innovador
+                                motor
+                                de 8 cilindros y una larga distancia entre ejes. Los pilotos Lord Howe y Sir Henry
+                                Birkin
+                                ganaron la carrera de 1.875 millas a
+                                velocidades promedio de 78 mph.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/LeMans-1931.webp" alt="Le Mans 1931">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1932</h2>
+                            <p>El Tipo B, también conocido como P3, fue el primer automóvil de Alfa Romeo diseñado
+                                específicamente para carreras de resistencia. Era el mejor monoplaza de Jano, ya que era
+                                esbelto, rápido y de alta tecnología con engranajes diferenciales y dos ejes de
+                                transmisión
+                                en V
+                                para transmitir potencia a las ruedas traseras.Nuvolari ganó todas las carreras de ese
+                                año
+                                en el
+                                P3, incluido el Gran Premio de Mónaco. la Targa Florio, el Gran Premio de Italia, el
+                                Gran
+                                Premio
+                                de Francia, la Coppa Ciano y la Coppa Acerbo.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Tipo-B.jpg" alt="Alfa Romeo Tipo B">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1933</h2>
+                            <p>En 1933, Alfa Romeo es comprada por el Instituto de Reconstrucción Industrial de Italia
+                                (IRI)
+                                y
+                                Nicola Romeo es reemplazado por Ugo Gobbato. Bajo el nuevo director, la sección de
+                                carreras
+                                de
+                                Alfa Romeo se transfirieren al equipo Ferrari y el caballo encabritado reemplazó al
+                                trébol
+                                de
+                                cuatro hojas en todos los coches de carreras de Alfa Romeo.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-8C.jpg" alt="Scuderia Ferrari">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1937</h2>
+                            <p>El 8C 2900 fue el automóvil deportivo más hermoso del mundo. Su chasis biplaza lo hacía
+                                ideal
+                                para el automovilismo. También se produjo como el 8C 2900B en dos elegantes variaciones:
+                                la
+                                versión corta, Spider Corsa, y la versión larga, Coupe Touring. La versión de carreras
+                                arrojó de
+                                inmediato un resultado que pasó a la historia de las carreras de Alfa Romeo: una
+                                increíble
+                                triple victoria en la Mille Miglia de 1938.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-8C-2900B-6.jfif" alt="Alfa Romeo 8C 2900B">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1938</h2>
+                            <p>El diseñador Gioacchino Colombo ayudó a dar forma a Alfetta, el monoplaza más duradero en
+                                la
+                                historia moderna de las carreras. Esbelto pero increíblemente ágil, ocupó el primer y
+                                segundo
+                                lugar durante su debut en la carrera Coppa Ciano en Italia.Las victorias iniciales
+                                fueron
+                                seguidas por una serie ininterrumpida de grandes premios que continuó hasta 1950, cuando
+                                ganó su
+                                primer título de Fórmula 1.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Alfetta-2.jfif" alt="Alfa Romeo Alfetta">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">1940s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1945</h2>
+                            <p>En la mañana del 28 de abril, Ugo Gobbato fue asesinado a tiros por un pistolero
+                                desconocido
+                                mientras se dirigía al trabajo en bicicleta. Sin un líder y con la mayoría de sus
+                                fábricas
+                                destruidas por la guerra, Alfa Romeo se encontró en una situación difícil.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Logo-3.jpg" alt="Alfa Romeo Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1945</h2>
+                            <p>Mientras que el nuevo presidente, Pasquale Gallo, fue designado para desmilitarizar Alfa
+                                Romeo,
+                                la responsabilidad del diseño pasó al ingeniero Orazio Satta Puliga. Hizo una
+                                contribución
+                                fundamental en el relanzamiento de Alfa Romeo de una vez por todas.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Orazio-Satta-Puliga.jfif" alt="Orazio Satta Puliga">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1947</h2>
+                            <p>Alfa Romeo inició la producción de dos nuevos automóviles que personificarían lo mejor
+                                del
+                                estilo, la sofisticación y la clase italia de posguerra. El primero fue el Freccia
+                                d'Oro,
+                                una versión del 6C 2500 Sport, con una cola redondeada y abreviada.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-6C-2500.jfif" alt="Alfa Romeo 6C 2500 Sport">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1949</h2>
+                            <p>El segundo diseño destacado lleva el nombre del Concurso de Elegancia (Concorso
+                                d'Eleganza),
+                                que
+                                se celebra todos los años a orillas del lago de Como, Italia. La Villa D’Este de Alfa
+                                Romeo
+                                fue
+                                la versión Super Sport del 6C 2500 Touring, un triunfo de las líneas clásicas. Se llevó
+                                el
+                                primer premio en el Gran Premio Referendum.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-6C-2500-Touring.jfif"
+                                    alt="Alfa Romeo 6C 2500 Touring">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">1950s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1950</h2>
+                            <p>Moderno y práctico, el diseñador de Alfa Romeo Orazio Satta Puliga consideró que el 1900
+                                era
+                                la
+                                mejor opción para la clase media. Ofrecía un gran rendimiento y una herencia de
+                                brillantes
+                                logros deportivos a un precio competitivo.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/alfa-romeo-1900-zagato.webp" alt="Alfa Romeo 1900 Zagato">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1950</h2>
+                            <p>Nino Farina gana el primer campeonato de Fórmula 1. Farina apenas superó a su compañero
+                                de
+                                equipo
+                                en Alfa Romeo, Manuel Fangio, para ganar el
+                                primer Campeonato Mundial de Fórmula 1 de Alfa Romeo en Silverstone, Inglaterra. Corrió
+                                con
+                                un
+                                Alfetta 158, un impresionante monoplaza diseñado por Gioacchino Colombo.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Nino-Farina.jfif" alt="Nino Farina">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1950</h2>
+                            <p>Nació el 159
+                                Se hicieron mejoras y se cambió el nombre, pero el alma se mantuvo fiel. El 159 recibió
+                                un
+                                motor
+                                más potente y una suspensión De Dion innovadora para un manejo perfecto en carretera. Se
+                                convertiría en la estrella del segundo Campeonato del Mundo al año siguiente.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Alfetta-159.jfif" alt="Alfa Romeo Alfetta 159">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1951</h2>
+                            <p>Manuel Fangio, uno de los mejores pilotos de Fórmula 1 de todos los tiempos, subió al
+                                podio
+                                tras ganar el segundo Campeonato del Mundo consecutivo para Alfa Romeo con el Alfetta
+                                159.
+                                Fangio no dejaba espacio para sus rivales, arrasándolos a todos con su estilo preciso
+                                y espectacular.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Fangio.png" alt="Manuel Fangio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1954</h2>
+                            <p>Bertone crea una leyenda, el Giulietta, convirtiendose en uno de los
+                                automóviles más queridos de Alfa Romeo. Hubo muchas variaciones diferentes: Berlina, Ti,
+                                Sprint
+                                y Spider - ambas en una versión "Veloce" - Sprint Speciale y Sprint Zagato. El Spider
+                                fue
+                                diseñado por Pininfarina, quien tenía una debilidad por su creación, a la que llamaba
+                                "la signorina ”.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa -Romeo-Giulietta-SZ.jpg"
+                                    alt="Alfa Romeo Giulietta SZ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">1960s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1960</h2>
+                            <p>Luraghi es nombrado nuevo presidente de Alfa Romeo. Con un nuevo presidente
+                                y la inaguración de una nueva planta en Pomigliano d'Arco, cerca de Nápoles, Alfa Romeo
+                                anticipó un crecimiento constante en Italia y más allá.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Logo-6.jpg" alt="Alfa Romeo Logo de 1960">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1962</h2>
+                            <p>El automóvil que desafió las convenciones y revolucionó el diseño: una cola cortada,
+                                lados
+                                cóncavos, morro bajo y parabrisas sinuoso. Probado en el túnel de viento en Turín,
+                                Italia,
+                                el
+                                Giulia fue mucho más evolucionado de lo normal. Tenía un coeficiente aerodinámico récord
+                                de
+                                0,34
+                                puntos, incluso más bajo que la clase Gran Turismo. Fue pura innovación: una joya de
+                                diseño,
+                                mecánica y seguridad de los pasajeros.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Giulia.jfif" alt="Alfa Romeo Giulia">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1963</h2>
+                            <p>Alfa Romeo vuelve a competir con el equipo Autodelta de Carlo Chiti. La gente de Chiti se
+                                comprometió a promover la imagen deportiva de Alfa Romeo y la reputación de las carreras
+                                internacionales. La relación continuará hasta 1984.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Autodelta.png" alt="Autodelta">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1965</h2>
+                            <p>Nace el Giulia Sprint GTA. Abreviatura de "Gran Turismo Alleggerita". Este auto de
+                                carreras
+                                fue
+                                diseñado
+                                específicamente para la categoría Turismo. La obra de arte de Bertone y Giugiaro mantuvo
+                                las
+                                mismas líneas que el Giulia Sprint GT, con paneles de carrocería de aluminio más
+                                livianos y
+                                un
+                                motor 1600 con culata de doble encendido. Ganó en tres ediciones consecutivas del
+                                Campeonato de Europa de Turismos: 1966, 1967 y 1968.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Giulia-Sprint-GTAV2.jpg"
+                                    alt="Alfa Romeo Giulia Sprint GTA">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1966</h2>
+                            <p>Producido durante 27 años, el Duetto fue el modelo más duradero de Alfa
+                                Romeo y tenía una forma de "hueso de jibia" única y una cola de barco. El Duetto Spider
+                                se
+                                ganó
+                                un lugar permanente en la cultura popular estadounidense después de su aparición en
+                                la famosa película de 1967 "El Graduado".</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Spider.jpg" alt="Alfa Romeo Spider Duetto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1967</h2>
+                            <p>Alfa Romeo le pidió al diseñador Franco Scaglione que agregara vida y belleza a la
+                                mecánica
+                                del
+                                Tipo 33, el modelo de carreras 33/2 de Alfa Romeo. Entregó una verdadera obra maestra:
+                                el 33
+                                Stradale, conocido como uno de los vehículos más hermosos jamás creados. Solo se
+                                produjeron
+                                18
+                                unidades,
+                                y hoy está valorado en más de 13 millones de dólares. El 33 Stradale tenía un
+                                diseño perfecto, ya que era un sofisticado sedán deportivo rebosante de encanto, audacia
+                                y
+                                funcionalidad.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-33-Stradale-3.jpg"
+                                    alt="Alfa Romeo 33 Stradale">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">1970s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1970</h2>
+                            <p>Alfa Romeo Montreal: del concepto a la producción. La pluma de Bertone produjo el
+                                prototipo
+                                original que se presentó en la Expo 67 en Montreal,
+                                Canadá. Combinando la emoción de los autos de carrera con lo esencial de un coche de
+                                diario,
+                                el
+                                motor de 8 cilindros en V de Montreal (tomado del 33) producía 200 caballos y
+                                velocidades
+                                máximas de
+                                220 kmh.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Montreal-3.jpeg" alt="Alfa Romeo Montreal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1972</h2>
+                            <p>El Alfetta hereda el nombre y comparte el sistema de suspensión De Dion con el campeón
+                                mundial de
+                                Fórmula 1 de Alfa Romeo, el tipo 159, también conocido como Alfetta (“Pequeño Alfa”).
+                                Era
+                                un sedán deportivo elegante y complejo. El motor delantero y la caja de cambios trasera
+                                le
+                                dieron al Alfetta una distribución de peso perfecta, una característica que sentaría un
+                                precedente para la competencia. Hasta 1984 aparecieron muchas versiones diferentes en
+                                cupé y
+                                sedán, y los tamaños de motor incluían 1.6, 1.8, 2000 y 2500 de 6 cilindros.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-GTV6.jpg" alt="Alfa Romeo GTV6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1972</h2>
+                            <p>El GTA Junior era el travieso hermano pequeño del GTA 1600, con un cc más bajo (1300) y
+                                señales
+                                de diseño que incluían una franja contrastante en el lateral y un gran logotipo de
+                                serpiente
+                                en
+                                el capó. Ágil y superrápido, consiguió una serie de victorias en el Grupo 2 en los
+                                Campeonatos
+                                de Europa, ganó todas las competiciones en 1972 y aseguró los campeonatos de pilotos y
+                                fabricantes del European Touring Car Challenge, superando a los automóviles que eran
+                                mucho
+                                más
+                                potentes.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/alfa-Romeo-GTA-Junior.jpeg" alt="Alfa Romeo GTA Junior">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1975</h2>
+                            <p>The Alfa Romeo 33 TT 12
+                                Designed by engineer Carlo Chiti, this racing prototype had a unique tubular chassis –
+                                “Telaio
+                                Tubolare” which was abbreviated to TT. Powerful and victorious, it came with a
+                                12-cylinder
+                                500
+                                HP boxer engine.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Brabham.jpg" alt="F1 Brabham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1976</h2>
+                            <p>Diseñado por el ingeniero Carlo Chiti, El Alfa Romeo 33 TT 12 tenía un chasis tubular
+                                único
+                                "Telaio Tubolare" que fue abreviado TT. Potente y victorioso, incluía con un motor bóxer
+                                de
+                                12
+                                cilindros y 500 caballos de potencia. Ganó siete de las ocho carreras del campeonato
+                                mundial
+                                de
+                                deportivos con Arturo Merzario al volante en cuatro de ellas.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-33-2.jpg" alt="Alfa Romeo Tipo 33">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">1980s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1981</h2>
+                            <p>El motor V6 transforma el cupé Alfetta convirtiendolo en un
+                                superdeportivo. Ganó concursos de clase de turismo en Europa y logró un éxito
+                                considerable
+                                en
+                                los Estados Unidos.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Busso.jpg" alt="Alfa Romeo Busso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1986</h2>
+                            <p>Alfa Romeo inaugura su centro de diseño de Milán. Cuando Finmeccanica vendió Alfa Romeo
+                                al
+                                grupo
+                                Fiat, su Centro de Diseño se trasladó a un
+                                complejo industrial en Arese, cerca de Milán, Italia. Dirigido por Walter de Silva, el
+                                centro
+                                estaba destinado a manejar proyectos importantes como el 145, los prototipos Proteo y
+                                Nuvola, el
+                                156, el 147 y el MiTo.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Diseños.jpeg" alt="Diseños de Alfa Romeo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1987</h2>
+                            <p>Diseñado por Pininfarina, el Alfa 164 fue el primer automóvil producido después de que
+                                Alfa
+                                Romeo
+                                fuera vendido al grupo Fiat. Un sedán de primera línea, espacioso, potente y elegante.
+                                Se
+                                hizo tan popular en Estados Unidos que se hicieron versiones especiales para el mercado
+                                estadounidense.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-164.jpeg" alt="Alfa Romeo 164">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">1990s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1992</h2>
+                            <p>Seguro y deportivo, el Alfa Romeo 155 fue diseñado para reemplazar al 75. Su nueva
+                                configuración
+                                técnica incluía tracción delantera y suspensión de ruedas independiente en los ejes
+                                delantero y
+                                trasero. En la escena de las carreras, el 155 V6 Ti ayudó a Alfa Romeo a ganar el título
+                                italiano de Superturismo, junto con una victoria histórica en el campeonato DTM de 1993.
+                            </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-155.jpeg" alt="Alfa Romeo 155">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>1993</h2>
+                            <p>Alfa Romeo debutó en el Campeonato Alemán de Turismos, confiando su destino a Nicola
+                                Larini.
+                                Al
+                                volante de un excelente 155 V6 Ti, Larini condujo la vuelta más rápida once
+                                veces y terminó primero en la general, superando al país anfitrión con un estilo
+                                espectacular.
+                            </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-155-1.jpeg" alt="Alfa Romeo 155">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>1997</h2>
+                            <p>El nacimiento del 156 fue revolucionario; marcó el comienzo de una nueva forma de diseñar
+                                automóviles. El sistema de inyección Common Rail para motores diesel resultó ser un hito
+                                tecnológico y una característica que eventualmente sería adoptada por todos los
+                                fabricantes
+                                de
+                                automóviles. Equipado con la palanca de cambios secuencial Selespeed, el nuevo
+                                sedán de Alfa Romeo fue un gran éxito comercial; sería galardonado como "Coche del año"
+                                en
+                                Europa en 1998</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-156-1.jpeg" alt="Alfa Romeo 156">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">2000s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>2002</h2>
+                            <p>El 156 GTA y Sportwagon GTA. Ambos automóviles se inspiraron en el rendimiento del
+                                legendario
+                                Giulia Sprint GTA. El mito de
+                                la deportividad pura, 36 años después, vivió en dos modelos que evocaban las mismas
+                                emociones:
+                                el 156 GTA y el Sportwagon GTA.En el ámbito de las carreras, Fabrizio Giovanardi ganó el
+                                Campeonato de Italia de Superturismo dos años seguidos. - 1998 y 1999.
+                            </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-156-GTA.jpeg" alt="Alfa Romeo 156 GTA">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>2007</h2>
+                            <p>Considerado uno de los coches más bonitos jamás creados, el 8C Competizione era un
+                                automóvil
+                                Touring de edición limitada que encapsulaba todos los valores
+                                de Alfa Romeo. Fue la combinación perfecta de herencia deportiva, pasión e innovación
+                                técnica. Su nombre resaltó la continuidad con la generación de autos de 8 cilindros que
+                                escribió
+                                uno de los mejores capítulos en la historia del automovilismo en la década de 1930. La
+                                versión
+                                spider se lanzó en 2009.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-8C-Competizione.jpg"
+                                    alt="Alfa Romeo 8C Competizione">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">2010s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>2015</h2>
+                            <p>El 4C Coupé continúa la tradición de Alfa Romeo de líneas y proporciones orientadas al
+                                rendimiento. Fuerza liviana, agilidad de superdeportivo y rendimiento inspirado en las
+                                carreras,
+                                el Alfa Romeo 4C deja su huella con una postura agresiva que se debe a la tecnología
+                                innovadora
+                                y los nuevos niveles de eficiencia.
+                            </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-4C.jpg" alt="Alfa Romeo 4C">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>2017</h2>
+                            <p>El Quadrifoglio de carretera más deportivo de todos los tiempos. El nuevo Giulia
+                                transmite
+                                diseño
+                                puro sin ser superfluo. Su estilo es inconfundiblemente Alfa Romeo, sensual y
+                                sustancial.
+                                Refleja la herencia de diseño de Alfa Romeo, con un enfoque constante en el conductor.
+                                La
+                                tecnología ayuda a mejorar el rendimiento y garantiza una experiencia de conducción
+                                excepcional.
+                                La relación entre el conductor y la máquina forma el núcleo de cada innovación,
+                                produciendo
+                                un
+                                automóvil que es la extensión natural del cerebro, el cuerpo y el corazón.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Giulia-Quadrifoglio.jpeg"
+                                    alt="Alfa Romeo Giulia Quadrifoglio">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedor derecha">
+                        <div class="content">
+                            <h2>2018</h2>
+                            <p>Aprovechando su herencia mientras mira hacia el futuro, Alfa Romeo ha creado otra obra
+                                maestra.
+                                El Stelvio: nacido de la mejor carretera de conducción del mundo, Alfa Romeo ha creado
+                                el
+                                vehículo óptimo para aquellos que exigen el más alto nivel de
+                                rendimiento y utilidad en igual medida.
+                            </p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Stelvio.jpeg" alt="Alfa Romeo Stelvio">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="acordeon">2020s</button>
+            <div class="panel">
+                <div class="timeline">
+                    <div class="contenedor izquierda">
+                        <div class="content">
+                            <h2>2021</h2>
+                            <p>Para celebrar su 110 aniversario, Alfa Romeo ha creado el Giulia GTA y Giulia GTAm, la
+                                evolución del Giulia Quadrifoglio, equipados con una versión mejorada del
+                                motor Alfa Romeo 2.9 V6 Bi-Turbo con 540 caballos de potencia. Gracias a la adopción de
+                                materiales ultraligeros como la fibra de carbono, aluminio y materiales compuestos, el
+                                Giulia GTAm
+                                también logra una excelente relación peso / potencia, gracias a una reducción de peso de
+                                100 kg.</p>
+                            <div>
+                                <img src="../media/fotos/alfa/Alfa-Romeo-Giulia-GTAm.jpg" alt="Alfa Romeo GTAm">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="acordeon">1920s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1922</h2>
-                        <p>Alfa Romeo lanza el RL, con un motor de seis cilindros en línea, balancín y
-                            válvulas en la parte superior, y frenos en las 4 ruedas. El Alfa Romeo RL fue un gran éxito
-                            y
-                            fue
-                            considerado como la obra maestra de Giuseppe Merosi. Llegaron pedidos internacionales y se
-                            construyeron 2.640 automóviles.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-RL.jpg" alt="Alfa Romeo RL">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1923</h2>
-                        <p>El legendario piloto de carreras Ugo Sivocci conquista la Targa Florio por
-                            primera vez, marcaron el inicio del éxito en las carreras de Alfa Romeo. Como preparación,
-                            el
-                            piloto pintó un cuadrado blanco con un “Quadrifoglio”, un trébol de cuatro hojas, en la
-                            parte
-                            delantera de su Alfa Romeo
-                            RL. Tras su muerte en Monza, todos los coches de carreras de Alfa Romeo han llevado el
-                            simbolo
-                            del “Quadrifoglio” sobre un triangulo blanco. </p>
-                        <div>
-                            <img src="../media/fotos/alfa/Quadrifoglio.jpg" alt="Símbolo del Quadrifoglio">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1924</h2>
-                        <p>Alfa Romeo lanza el P2, un monoplaza de competición con motor sobrealimentado de 8 cilindros
-                            y
-                            dos carburadores de inducción forzada diseñado por Vittorio Jano. El P2 se convirtió en uno
-                            de
-                            los
-                            mejores automóviles competición de la década de 1920.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-P2.jpg" alt="Alfa Romeo P2">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1925</h2>
-                        <p>Gastone Brilli Peri gana el primer Campeonato del Mundo de Alfa Romeo con el Gran Premio Tipo
-                            P2.
-                            Cuatro Alfa Romeos cruzaron la línea de meta, uno tras otro, con una ventaja de 45
-                            minutos sobre el quinto piloto. La espectacular victoria le dio a Alfa Romeo una razón para
-                            agregar la corona de laurel a su
-                            logotipo.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Grand-Prix-1925.jpg" alt="Gran Premio de 1925">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1928</h2>
-                        <p>Alfa Romeo Gana su primera Mille Miglia, una carrera de resistencia en carretera abierta que
-                            consta de mil millas en forma de ocho que recorre las ciudades italianas de Brescia y Roma.
-                            Campari y Ramponi ganaron la carrera en tiempo récord con el nuevo Alfa Romeo 6C 1500.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Mille-Miglia.jpg" alt="Mille Miglia de 1928">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1929</h2>
-                        <p>Enzo Ferrari establece su equipo de carreras Scuderia Ferrari en Modena, Italia, incluyendo a
-                            más
-                            de 40 de los mejores pilotos de carreras de la época, incluidos Ascari, Campari y Nuvolari.
-                            El
-                            equipo logró todos los logros de carreras de Alfa Romeo de la epoca.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Nicola-Romeo-Enzo-Ferrari.jpg" alt="Enzo Ferrari">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">1930s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1930</h2>
-                        <p>Alfa Romeo presenta el 6C 1750 en el Salón del Automóvil de Roma de 1929. Era una variación
-                            del
-                            6C 1500,
-                            con un motor más potente. Su rendimiento excepcional quedó demostrado al año siguiente
-                            cuando
-                            Nuvolari y Guidotti ganaron la carrera de Mille Miglia con un promedio de velocidad récord
-                            de 62
-                            mph.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-6C-1.jfif" alt="Alfa Romeo 6C">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1931</h2>
-                        <p>Alfa Romeo obtiene la victoria por primera vez en Le Mans con el 8C2300. Con un innovador
-                            motor
-                            de 8 cilindros y una larga distancia entre ejes. Los pilotos Lord Howe y Sir Henry Birkin
-                            ganaron la carrera de 1.875 millas a
-                            velocidades promedio de 78 mph.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/LeMans-1931.webp" alt="Le Mans 1931">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1932</h2>
-                        <p>El Tipo B, también conocido como P3, fue el primer automóvil de Alfa Romeo diseñado
-                            específicamente para carreras de resistencia. Era el mejor monoplaza de Jano, ya que era
-                            esbelto, rápido y de alta tecnología con engranajes diferenciales y dos ejes de transmisión
-                            en V
-                            para transmitir potencia a las ruedas traseras.Nuvolari ganó todas las carreras de ese año
-                            en el
-                            P3, incluido el Gran Premio de Mónaco. la Targa Florio, el Gran Premio de Italia, el Gran
-                            Premio
-                            de Francia, la Coppa Ciano y la Coppa Acerbo.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Tipo-B.jpg" alt="Alfa Romeo Tipo B">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1933</h2>
-                        <p>En 1933, Alfa Romeo es comprada por el Instituto de Reconstrucción Industrial de Italia (IRI)
-                            y
-                            Nicola Romeo es reemplazado por Ugo Gobbato. Bajo el nuevo director, la sección de carreras
-                            de
-                            Alfa Romeo se transfirieren al equipo Ferrari y el caballo encabritado reemplazó al trébol
-                            de
-                            cuatro hojas en todos los coches de carreras de Alfa Romeo.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-8C.jpg" alt="Scuderia Ferrari">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1937</h2>
-                        <p>El 8C 2900 fue el automóvil deportivo más hermoso del mundo. Su chasis biplaza lo hacía ideal
-                            para el automovilismo. También se produjo como el 8C 2900B en dos elegantes variaciones: la
-                            versión corta, Spider Corsa, y la versión larga, Coupe Touring. La versión de carreras
-                            arrojó de
-                            inmediato un resultado que pasó a la historia de las carreras de Alfa Romeo: una increíble
-                            triple victoria en la Mille Miglia de 1938.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-8C-2900B-6.jfif" alt="Alfa Romeo 8C 2900B">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1938</h2>
-                        <p>El diseñador Gioacchino Colombo ayudó a dar forma a Alfetta, el monoplaza más duradero en la
-                            historia moderna de las carreras. Esbelto pero increíblemente ágil, ocupó el primer y
-                            segundo
-                            lugar durante su debut en la carrera Coppa Ciano en Italia.Las victorias iniciales fueron
-                            seguidas por una serie ininterrumpida de grandes premios que continuó hasta 1950, cuando
-                            ganó su
-                            primer título de Fórmula 1.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Alfetta-2.jfif" alt="Alfa Romeo Alfetta">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">1940s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1945</h2>
-                        <p>En la mañana del 28 de abril, Ugo Gobbato fue asesinado a tiros por un pistolero desconocido
-                            mientras se dirigía al trabajo en bicicleta. Sin un líder y con la mayoría de sus fábricas
-                            destruidas por la guerra, Alfa Romeo se encontró en una situación difícil.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Logo-3.jpg" alt="Alfa Romeo Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1945</h2>
-                        <p>Mientras que el nuevo presidente, Pasquale Gallo, fue designado para desmilitarizar Alfa
-                            Romeo,
-                            la responsabilidad del diseño pasó al ingeniero Orazio Satta Puliga. Hizo una contribución
-                            fundamental en el relanzamiento de Alfa Romeo de una vez por todas.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Orazio-Satta-Puliga.jfif" alt="Orazio Satta Puliga">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1947</h2>
-                        <p>Alfa Romeo inició la producción de dos nuevos automóviles que personificarían lo mejor del
-                            estilo, la sofisticación y la clase italia de posguerra. El primero fue el Freccia d'Oro,
-                            una versión del 6C 2500 Sport, con una cola redondeada y abreviada.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-6C-2500.jfif" alt="Alfa Romeo 6C 2500 Sport">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1949</h2>
-                        <p>El segundo diseño destacado lleva el nombre del Concurso de Elegancia (Concorso d'Eleganza),
-                            que
-                            se celebra todos los años a orillas del lago de Como, Italia. La Villa D’Este de Alfa Romeo
-                            fue
-                            la versión Super Sport del 6C 2500 Touring, un triunfo de las líneas clásicas. Se llevó el
-                            primer premio en el Gran Premio Referendum.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-6C-2500-Touring.jfif"
-                                alt="Alfa Romeo 6C 2500 Touring">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">1950s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1950</h2>
-                        <p>Moderno y práctico, el diseñador de Alfa Romeo Orazio Satta Puliga consideró que el 1900 era
-                            la
-                            mejor opción para la clase media. Ofrecía un gran rendimiento y una herencia de brillantes
-                            logros deportivos a un precio competitivo.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/alfa-romeo-1900-zagato.webp" alt="Alfa Romeo 1900 Zagato">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1950</h2>
-                        <p>Nino Farina gana el primer campeonato de Fórmula 1. Farina apenas superó a su compañero de
-                            equipo
-                            en Alfa Romeo, Manuel Fangio, para ganar el
-                            primer Campeonato Mundial de Fórmula 1 de Alfa Romeo en Silverstone, Inglaterra. Corrió con
-                            un
-                            Alfetta 158, un impresionante monoplaza diseñado por Gioacchino Colombo.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Nino-Farina.jfif" alt="Nino Farina">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1950</h2>
-                        <p>Nació el 159
-                            Se hicieron mejoras y se cambió el nombre, pero el alma se mantuvo fiel. El 159 recibió un
-                            motor
-                            más potente y una suspensión De Dion innovadora para un manejo perfecto en carretera. Se
-                            convertiría en la estrella del segundo Campeonato del Mundo al año siguiente.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Alfetta-159.jfif" alt="Alfa Romeo Alfetta 159">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1951</h2>
-                        <p>Manuel Fangio, uno de los mejores pilotos de Fórmula 1 de todos los tiempos, subió al podio
-                            tras ganar el segundo Campeonato del Mundo consecutivo para Alfa Romeo con el Alfetta 159.
-                            Fangio no dejaba espacio para sus rivales, arrasándolos a todos con su estilo preciso
-                            y espectacular.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Fangio.png" alt="Manuel Fangio">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1954</h2>
-                        <p>Bertone crea una leyenda, el Giulietta, convirtiendose en uno de los
-                            automóviles más queridos de Alfa Romeo. Hubo muchas variaciones diferentes: Berlina, Ti,
-                            Sprint
-                            y Spider - ambas en una versión "Veloce" - Sprint Speciale y Sprint Zagato. El Spider fue
-                            diseñado por Pininfarina, quien tenía una debilidad por su creación, a la que llamaba
-                            "la signorina ”.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa -Romeo-Giulietta-SZ.jpg" alt="Alfa Romeo Giulietta SZ">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">1960s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1960</h2>
-                        <p>Luraghi es nombrado nuevo presidente de Alfa Romeo. Con un nuevo presidente
-                            y la inaguración de una nueva planta en Pomigliano d'Arco, cerca de Nápoles, Alfa Romeo
-                            anticipó un crecimiento constante en Italia y más allá.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Logo-6.jpg" alt="Alfa Romeo Logo de 1960">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1962</h2>
-                        <p>El automóvil que desafió las convenciones y revolucionó el diseño: una cola cortada, lados
-                            cóncavos, morro bajo y parabrisas sinuoso. Probado en el túnel de viento en Turín, Italia,
-                            el
-                            Giulia fue mucho más evolucionado de lo normal. Tenía un coeficiente aerodinámico récord de
-                            0,34
-                            puntos, incluso más bajo que la clase Gran Turismo. Fue pura innovación: una joya de diseño,
-                            mecánica y seguridad de los pasajeros.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Giulia.jfif" alt="Alfa Romeo Giulia">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1963</h2>
-                        <p>Alfa Romeo vuelve a competir con el equipo Autodelta de Carlo Chiti. La gente de Chiti se
-                            comprometió a promover la imagen deportiva de Alfa Romeo y la reputación de las carreras
-                            internacionales. La relación continuará hasta 1984.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Autodelta.png" alt="Autodelta">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1965</h2>
-                        <p>Nace el Giulia Sprint GTA. Abreviatura de "Gran Turismo Alleggerita". Este auto de carreras
-                            fue
-                            diseñado
-                            específicamente para la categoría Turismo. La obra de arte de Bertone y Giugiaro mantuvo las
-                            mismas líneas que el Giulia Sprint GT, con paneles de carrocería de aluminio más livianos y
-                            un
-                            motor 1600 con culata de doble encendido. Ganó en tres ediciones consecutivas del
-                            Campeonato de Europa de Turismos: 1966, 1967 y 1968.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Giulia-Sprint-GTAV2.jpg"
-                                alt="Alfa Romeo Giulia Sprint GTA">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1966</h2>
-                        <p>Producido durante 27 años, el Duetto fue el modelo más duradero de Alfa
-                            Romeo y tenía una forma de "hueso de jibia" única y una cola de barco. El Duetto Spider se
-                            ganó
-                            un lugar permanente en la cultura popular estadounidense después de su aparición en
-                            la famosa película de 1967 "El Graduado".</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Spider.jpg" alt="Alfa Romeo Spider Duetto">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1967</h2>
-                        <p>Alfa Romeo le pidió al diseñador Franco Scaglione que agregara vida y belleza a la mecánica
-                            del
-                            Tipo 33, el modelo de carreras 33/2 de Alfa Romeo. Entregó una verdadera obra maestra: el 33
-                            Stradale, conocido como uno de los vehículos más hermosos jamás creados. Solo se produjeron
-                            18
-                            unidades,
-                            y hoy está valorado en más de 13 millones de dólares. El 33 Stradale tenía un
-                            diseño perfecto, ya que era un sofisticado sedán deportivo rebosante de encanto, audacia y
-                            funcionalidad.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-33-Stradale-3.jpg" alt="Alfa Romeo 33 Stradale">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">1970s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1970</h2>
-                        <p>Alfa Romeo Montreal: del concepto a la producción. La pluma de Bertone produjo el prototipo
-                            original que se presentó en la Expo 67 en Montreal,
-                            Canadá. Combinando la emoción de los autos de carrera con lo esencial de un coche de diario,
-                            el
-                            motor de 8 cilindros en V de Montreal (tomado del 33) producía 200 caballos y velocidades
-                            máximas de
-                            220 kmh.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Montreal-3.jpeg" alt="Alfa Romeo Montreal">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1972</h2>
-                        <p>El Alfetta hereda el nombre y comparte el sistema de suspensión De Dion con el campeón
-                            mundial de
-                            Fórmula 1 de Alfa Romeo, el tipo 159, también conocido como Alfetta (“Pequeño Alfa”). Era
-                            un sedán deportivo elegante y complejo. El motor delantero y la caja de cambios trasera le
-                            dieron al Alfetta una distribución de peso perfecta, una característica que sentaría un
-                            precedente para la competencia. Hasta 1984 aparecieron muchas versiones diferentes en cupé y
-                            sedán, y los tamaños de motor incluían 1.6, 1.8, 2000 y 2500 de 6 cilindros.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-GTV6.jpg" alt="Alfa Romeo GTV6">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1972</h2>
-                        <p>El GTA Junior era el travieso hermano pequeño del GTA 1600, con un cc más bajo (1300) y
-                            señales
-                            de diseño que incluían una franja contrastante en el lateral y un gran logotipo de serpiente
-                            en
-                            el capó. Ágil y superrápido, consiguió una serie de victorias en el Grupo 2 en los
-                            Campeonatos
-                            de Europa, ganó todas las competiciones en 1972 y aseguró los campeonatos de pilotos y
-                            fabricantes del European Touring Car Challenge, superando a los automóviles que eran mucho
-                            más
-                            potentes.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/alfa-Romeo-GTA-Junior.jpeg" alt="Alfa Romeo GTA Junior">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1975</h2>
-                        <p>The Alfa Romeo 33 TT 12
-                            Designed by engineer Carlo Chiti, this racing prototype had a unique tubular chassis –
-                            “Telaio
-                            Tubolare” which was abbreviated to TT. Powerful and victorious, it came with a 12-cylinder
-                            500
-                            HP boxer engine.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Brabham.jpg" alt="F1 Brabham">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1976</h2>
-                        <p>Diseñado por el ingeniero Carlo Chiti, El Alfa Romeo 33 TT 12 tenía un chasis tubular único
-                            "Telaio Tubolare" que fue abreviado TT. Potente y victorioso, incluía con un motor bóxer de
-                            12
-                            cilindros y 500 caballos de potencia. Ganó siete de las ocho carreras del campeonato mundial
-                            de
-                            deportivos con Arturo Merzario al volante en cuatro de ellas.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-33-2.jpg" alt="Alfa Romeo Tipo 33">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">1980s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1981</h2>
-                        <p>El motor V6 transforma el cupé Alfetta convirtiendolo en un
-                            superdeportivo. Ganó concursos de clase de turismo en Europa y logró un éxito considerable
-                            en
-                            los Estados Unidos.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Busso.jpg" alt="Alfa Romeo Busso">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1986</h2>
-                        <p>Alfa Romeo inaugura su centro de diseño de Milán. Cuando Finmeccanica vendió Alfa Romeo al
-                            grupo
-                            Fiat, su Centro de Diseño se trasladó a un
-                            complejo industrial en Arese, cerca de Milán, Italia. Dirigido por Walter de Silva, el
-                            centro
-                            estaba destinado a manejar proyectos importantes como el 145, los prototipos Proteo y
-                            Nuvola, el
-                            156, el 147 y el MiTo.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Diseños.jpeg" alt="Diseños de Alfa Romeo">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1987</h2>
-                        <p>Diseñado por Pininfarina, el Alfa 164 fue el primer automóvil producido después de que Alfa
-                            Romeo
-                            fuera vendido al grupo Fiat. Un sedán de primera línea, espacioso, potente y elegante. Se
-                            hizo tan popular en Estados Unidos que se hicieron versiones especiales para el mercado
-                            estadounidense.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-164.jpeg" alt="Alfa Romeo 164">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">1990s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1992</h2>
-                        <p>Seguro y deportivo, el Alfa Romeo 155 fue diseñado para reemplazar al 75. Su nueva
-                            configuración
-                            técnica incluía tracción delantera y suspensión de ruedas independiente en los ejes
-                            delantero y
-                            trasero. En la escena de las carreras, el 155 V6 Ti ayudó a Alfa Romeo a ganar el título
-                            italiano de Superturismo, junto con una victoria histórica en el campeonato DTM de 1993.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-155.jpeg" alt="Alfa Romeo 155">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>1993</h2>
-                        <p>Alfa Romeo debutó en el Campeonato Alemán de Turismos, confiando su destino a Nicola Larini.
-                            Al
-                            volante de un excelente 155 V6 Ti, Larini condujo la vuelta más rápida once
-                            veces y terminó primero en la general, superando al país anfitrión con un estilo
-                            espectacular.
-                        </p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-155-1.jpeg" alt="Alfa Romeo 155">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>1997</h2>
-                        <p>El nacimiento del 156 fue revolucionario; marcó el comienzo de una nueva forma de diseñar
-                            automóviles. El sistema de inyección Common Rail para motores diesel resultó ser un hito
-                            tecnológico y una característica que eventualmente sería adoptada por todos los fabricantes
-                            de
-                            automóviles. Equipado con la palanca de cambios secuencial Selespeed, el nuevo
-                            sedán de Alfa Romeo fue un gran éxito comercial; sería galardonado como "Coche del año" en
-                            Europa en 1998</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-156-1.jpeg" alt="Alfa Romeo 156">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">2000s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>2002</h2>
-                        <p>El 156 GTA y Sportwagon GTA. Ambos automóviles se inspiraron en el rendimiento del legendario
-                            Giulia Sprint GTA. El mito de
-                            la deportividad pura, 36 años después, vivió en dos modelos que evocaban las mismas
-                            emociones:
-                            el 156 GTA y el Sportwagon GTA.En el ámbito de las carreras, Fabrizio Giovanardi ganó el
-                            Campeonato de Italia de Superturismo dos años seguidos. - 1998 y 1999.
-                        </p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-156-GTA.jpeg" alt="Alfa Romeo 156 GTA">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>2007</h2>
-                        <p>Considerado uno de los coches más bonitos jamás creados, el 8C Competizione era un automóvil
-                            Touring de edición limitada que encapsulaba todos los valores
-                            de Alfa Romeo. Fue la combinación perfecta de herencia deportiva, pasión e innovación
-                            técnica. Su nombre resaltó la continuidad con la generación de autos de 8 cilindros que
-                            escribió
-                            uno de los mejores capítulos en la historia del automovilismo en la década de 1930. La
-                            versión
-                            spider se lanzó en 2009.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-8C-Competizione.jpg"
-                                alt="Alfa Romeo 8C Competizione">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">2010s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>2015</h2>
-                        <p>El 4C Coupé continúa la tradición de Alfa Romeo de líneas y proporciones orientadas al
-                            rendimiento. Fuerza liviana, agilidad de superdeportivo y rendimiento inspirado en las
-                            carreras,
-                            el Alfa Romeo 4C deja su huella con una postura agresiva que se debe a la tecnología
-                            innovadora
-                            y los nuevos niveles de eficiencia.
-                        </p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-4C.jpg" alt="Alfa Romeo 4C">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>2017</h2>
-                        <p>El Quadrifoglio de carretera más deportivo de todos los tiempos. El nuevo Giulia transmite
-                            diseño
-                            puro sin ser superfluo. Su estilo es inconfundiblemente Alfa Romeo, sensual y sustancial.
-                            Refleja la herencia de diseño de Alfa Romeo, con un enfoque constante en el conductor. La
-                            tecnología ayuda a mejorar el rendimiento y garantiza una experiencia de conducción
-                            excepcional.
-                            La relación entre el conductor y la máquina forma el núcleo de cada innovación, produciendo
-                            un
-                            automóvil que es la extensión natural del cerebro, el cuerpo y el corazón.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Giulia-Quadrifoglio.jpeg"
-                                alt="Alfa Romeo Giulia Quadrifoglio">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor derecha">
-                    <div class="content">
-                        <h2>2018</h2>
-                        <p>Aprovechando su herencia mientras mira hacia el futuro, Alfa Romeo ha creado otra obra
-                            maestra.
-                            El Stelvio: nacido de la mejor carretera de conducción del mundo, Alfa Romeo ha creado el
-                            vehículo óptimo para aquellos que exigen el más alto nivel de
-                            rendimiento y utilidad en igual medida.
-                        </p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Stelvio.jpeg" alt="Alfa Romeo Stelvio">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="acordeon">2020s</button>
-        <div class="panel">
-            <div class="timeline">
-                <div class="contenedor izquierda">
-                    <div class="content">
-                        <h2>2021</h2>
-                        <p>Para celebrar su 110 aniversario, Alfa Romeo ha creado el Giulia GTA y Giulia GTAm, la
-                            evolución del Giulia Quadrifoglio, equipados con una versión mejorada del
-                            motor Alfa Romeo 2.9 V6 Bi-Turbo con 540 caballos de potencia. Gracias a la adopción de
-                            materiales ultraligeros como la fibra de carbono, aluminio y materiales compuestos, el
-                            Giulia GTAm
-                            también logra una excelente relación peso / potencia, gracias a una reducción de peso de
-                            100 kg.</p>
-                        <div>
-                            <img src="../media/fotos/alfa/Alfa-Romeo-Giulia-GTAm.jpg" alt="Alfa Romeo GTAm">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+        <!--Cita-->
         <div class="cita">
             <p class="cita-texto"><i>"When I see an Alfa Romeo go by, I tip my
                     hat."</i></p>
             <p class="cita-autor">Henry Ford</p>
         </div>
 
+        <!--Imagen fija-->
         <div id="parallax3"></div>
 
+        <!--Artículos-->
         <div class="titulo">
             <h2>Ultimos Artículos</h2>
         </div>
-
 
         <div class="fila-articulos aparecer">
             <div class="bloque-articulos">
@@ -956,6 +1056,7 @@
         </div>
     </div>
 
+    <!--Documentación y enlaces-->
     <footer>
         <div id="documentacion">
             <div class="doc-columna">
@@ -1001,16 +1102,16 @@
             </div>
         </div>
     </footer>
+
+    <!--Copyright-->
     <div id="copyright">
         <p>MI CLÁSICO ITALIANO</p>
         &copy; 2021 Manuel Carrillo
     </div>
 
-
-
-
 </body>
 
+<!--Enlace a JavaScript-->
 <script src="..\js\javascript.js"></script>
 
 </html>
