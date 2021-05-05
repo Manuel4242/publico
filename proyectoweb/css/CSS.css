@@ -66,7 +66,14 @@ header span:hover {
     visibility: hidden;
 }
 
-#login i:hover {
+#logout {
+    width: 10%;
+    padding-top: 25px;
+    visibility: hidden;
+    display: none;
+}
+
+#login i:hover, #logout i:hover {
     cursor: pointer;
     color: firebrick;
 }
@@ -184,17 +191,6 @@ nav a:hover, nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
 
 #nav-login:hover #subnav {display: block;}
 
-@media screen and (max-width: 600px) {
-
-    #menu {visibility: visible;}
-
-    header i {visibility: visible;}
-
-    nav {visibility: hidden;}
-
-    #cabecera {height: 65px;}
-}
-
 /*Estilo del menú desplegable*/
 .overlay {
     height: 100%;
@@ -235,15 +231,6 @@ nav a:hover, nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
     right: 45px;
     font-size: 60px;
   }
-
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-}
 
 /*Estilo del login desplegable*/
 .overlayLog {
@@ -300,14 +287,7 @@ color:firebrick;
     font-size: 60px;
   }
   
-@media screen and (max-height: 450px) {
-    .overlayLog a {font-size: 20px}
-    .overlayLog .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-}
+
 
 /*Estilo del footer*/
 .fila{
@@ -375,16 +355,7 @@ input[type=submit]:hover {
 
 .rrss a:hover {color: firebrick;}
 
-@media screen and (max-width: 600px) {
-    
-    .columna {width: 100%;}
 
-    .fila {padding-bottom: 15px;}
-
-    .columna input[type=email], 
-    .columna input[type=submit]{width: 100%;}
-
-}
 footer {
     padding: 20px;
     text-align: center;
@@ -439,7 +410,31 @@ footer {
     opacity: 1;
   }
 
+  @media screen and (max-height: 450px) {
+    .overlayLog a {font-size: 20px}
+    .overlayLog .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
+
   @media screen and (max-width: 600px) {
+
+    #menu {visibility: visible;}
+
+    header i {visibility: visible;}
+
+    nav {visibility: hidden;}
+
+    #cabecera {height: 65px;}
+
+    .columna {width: 100%;}
+
+    .fila {padding-bottom: 15px;}
+
+    .columna input[type=email], 
+    .columna input[type=submit]{width: 100%;}
 
     #documentacion {display: block;}
 

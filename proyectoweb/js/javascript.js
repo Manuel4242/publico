@@ -10,6 +10,8 @@ function comprobar() {
   if (sessionStorage.getItem("usuario").length > 0) {
     document.getElementById("nav-login").style.display = "none";
     document.getElementById("nav-logout").style.display = "block";
+    document.getElementById("login").style.display = "none";
+    document.getElementById("logout").style.display = "block";
   }
 }
 
