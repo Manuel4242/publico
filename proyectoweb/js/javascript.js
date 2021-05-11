@@ -62,7 +62,7 @@ function miFuncion(xml) {
       }
     }
   }
-*/
+
   if (validado) {
     sessionStorage.setItem("usuario", x);
     location.reload();
@@ -72,7 +72,7 @@ function miFuncion(xml) {
   }
 
 }
-
+*/
 
 
 
