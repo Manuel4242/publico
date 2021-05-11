@@ -31,7 +31,7 @@ function ingresar() {
   location.reload();
   return false;
 }
-
+/*
 //Prueba
 function leerXML() {
   var xhr = new XMLHttpRequest();
@@ -62,7 +62,7 @@ function miFuncion(xml) {
       }
     }
   }
-
+*/
   if (validado) {
     sessionStorage.setItem("usuario", x);
     location.reload();
