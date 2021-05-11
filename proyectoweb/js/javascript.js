@@ -62,7 +62,7 @@ function miFuncion(xml) {
   }
 
   if (validado == true) {
-    sessionStorage.setItem("usuario", x);
+    sessionStorage.setItem("usuario", nombre);
     location.reload();
   } else {
     window.alert("Usuario o contraseña incorrectos");
