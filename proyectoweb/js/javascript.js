@@ -40,7 +40,7 @@ function leerXML() {
       miFuncion(this);
     }
   };
-  xhr.open("GET", "registrados.xml", true);
+  xhr.open("GET", "https://manuel4242.github.io/publico/proyectoweb/js/registrados.xml", true);
   xhr.send();
 }
 
