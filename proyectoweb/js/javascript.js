@@ -31,7 +31,7 @@ function ingresar() {
   location.reload();
   return false;
 }
-/*
+
 //Prueba
 function leerXML() {
   var xhr = new XMLHttpRequest();
@@ -46,36 +46,28 @@ function leerXML() {
 
 function miFuncion(xml) {
   var i;
-  var x = document.forms["formularioIngreso"]["usuario"].value;
-  var y = document.forms["formularioIngreso"]["contraseña"].value;
-  var validado = false;
-  var usrNom;
-  var usrPsw;
+  var nombre = document.forms["formularioIngreso"]["usuario"].value;
+  var contrasenia = document.forms["formularioIngreso"]["contraseña"].value;
   var xmlDoc = xml.responseXML;
   var x = xmlDoc.getElementsByTagName("usuario");
+  validado = false;
 
   for (i = 0; i < x.length; i++) {
-    if (usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == x) {
-      if (usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == y) {
+    if (x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == nombre) {
+      if (x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == contrasenia) {
         validado = true;
         break;
       }
     }
   }
 
-  if (validado) {
+  if (validado == true) {
     sessionStorage.setItem("usuario", x);
     location.reload();
-    return false;
   } else {
-    window.alert("Usuario o contraseña incorrecta");
+    window.alert("Usuario o contraseña incorrectos");
   }
-
 }
-*/
-
-
-
 //Fin de prueba
 
 //Función que desconecta al usuario, vaciando la variable del session storage
