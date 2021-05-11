@@ -32,6 +32,52 @@ function ingresar() {
   return false;
 }
 
+//Prueba
+function leerXML() {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      miFuncion(this);
+    }
+  };
+  xhr.open("GET", "registrados.xml", true);
+  xhr.send();
+}
+
+function miFuncion(xml) {
+  var i;
+  var x = document.forms["formularioIngreso"]["usuario"].value;
+  var y = document.forms["formularioIngreso"]["contraseña"].value;
+  var validado = false;
+  var usrNom;
+  var usrPsw;
+  var xmlDoc = xml.responseXML;
+  var x = xmlDoc.getElementsByTagName("usuario");
+
+  for (i = 0; i < x.length; i++) {
+    if (usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == x) {
+      if (usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == y) {
+        validado = true;
+        break;
+      }
+    }
+  }
+
+  if (validado) {
+    sessionStorage.setItem("usuario", x);
+    location.reload();
+    return false;
+  } else {
+    window.alert("Usuario o contraseña incorrecta");
+  }
+
+}
+
+
+
+
+//Fin de prueba
+
 //Función que desconecta al usuario, vaciando la variable del session storage
 function salir() {
   if (typeof (Storage) !== "undefined") {
