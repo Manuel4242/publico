@@ -250,6 +250,9 @@ main {margin-top: 45px;}
   right: 0;
 }
 
+/*Bloque más leido*/
+#mas-leido {padding: 50px 0px;}
+
 /*Bloque de videos*/
 #bloque-video {
   background-color: black;

@@ -86,6 +86,41 @@ h4 {
   background-size:cover;
 }
 
+.titulo {padding: 15px;}
+
+.fila-articulos {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px 50px 0px;
+ }
+ 
+ .bloque-articulos {display: flex;}
+ 
+ .articulos {display: block}
+ 
+ .imagen-articulo {width: 100%;}
+ 
+ .imagen-articulo img{
+   width: 95%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ .texto-articulo {
+   width: 90%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ .bloque-articulos a {
+   text-decoration: none;
+   color: black;
+ }
+
 /*Estilo por debajo de 600px*/
 @media screen and (max-width: 600px) {
 
