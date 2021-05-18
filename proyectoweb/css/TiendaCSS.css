@@ -44,9 +44,34 @@ h1 {
   padding-left: 1%;
   padding-bottom: 25px;
   display: block;
+  cursor: pointer;
 }
+
+.imagen-anuncio {position: relative;}
   
-.imagen-anuncio img {width: 100%;}
+.imagen-anuncio img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-anuncio {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f9f9f9; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #f9f9f9;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.anuncio:hover .overlay-anuncio {
+  opacity: 1;
+}
 
 .paginacion {
   display: flex;

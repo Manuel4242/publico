@@ -92,6 +92,10 @@ a {
     transform: scale(1.2);
 }
 
+#dolly-texto {
+    text-align: center;
+    padding: 5px 0px 45px 0px;
+}
 
 @media screen and (max-width: 900px) {
     #dolly {
