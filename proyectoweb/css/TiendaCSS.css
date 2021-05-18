@@ -5,84 +5,87 @@ autor: Manuel Carrillo
 fecha: Abril de 2021
 */
 
-#contenido-tienda {
-    display: none;
-}
+#contenido-tienda {display: none;}
 
 h1 {
-    position: absolute;
-    text-align: center;
-    top: 35%;
-    width: 100%;
-    font-size:80px;
-    font-weight: 100;
-    letter-spacing: 5px;
-    color: transparent;
-    -webkit-text-stroke: 2px #f2f2f2;
-  }
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+  font-size:80px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: transparent;
+  -webkit-text-stroke: 2px #f2f2f2;
+}
   
-  #parallax {
-    background-image: url(../media/fotos/maserati/maserati-a6gcs.webp);
-    width: 100%;
-    height: 650px;
-    background-attachment: fixed;
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+#parallax {
+  background-image: url(../media/fotos/maserati/maserati-a6gcs.webp);
+  width: 100%;
+  height: 650px;
+  background-attachment: fixed;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
   
-  #titulo {
-      padding: 25px;
-  }
+#titulo {padding: 25px;}
   
-  .bloque-anuncios {
-      display: flex;
-      text-align: center;
-      font-size: 15px;
-      padding: 0 50px;
-  }
+.bloque-anuncios {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  padding: 0 50px;
+}
   
-  .anuncio {
-      width: 25%;
-      padding-left: 1%;
-      padding-bottom: 25px;
-      display: block;
-  }
+.anuncio {
+  width: 25%;
+  padding-left: 1%;
+  padding-bottom: 25px;
+  display: block;
+}
   
-  .imagen-anuncio {
-      
-  }
+.imagen-anuncio img {width: 100%;}
+
+.paginacion {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 25px 0px 50px 0px;
+}
+
+.paginacion a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.paginacion a:hover:not(.active) {background-color: #f9f9f9;}
+
+.paginacion a.active {
+  background-color: firebrick;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
   
-  .imagen-anuncio img {
-      width: 100%;
-  }
+@media screen and (max-width: 600px) {
+
+    h1 {
+      font-size:50px;
+      -webkit-text-stroke: 1px #f2f2f2;
+    }
   
-  .texto-anuncio {
+    #parallax {
+      height: 450px;
+      background-size: cover;
+    }
   
-  }
+    .bloque-anuncios {display: block;}
   
-  .precio-anuncio {
-  
-  }
-  
-  @media screen and (max-width: 600px) {
-      h1 {
-        font-size:50px;
-        -webkit-text-stroke: 1px #f2f2f2;
-      }
-  
-      #parallax {
-        height: 450px;
-        background-size: cover;
-      }
-  
-      .bloque-anuncios {
-        display: block;
-      }
-  
-      .anuncio {
-        width: 100%;
-      }
+    .anuncio {width: 100%;}
   
   }
