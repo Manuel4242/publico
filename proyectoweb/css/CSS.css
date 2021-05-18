@@ -292,7 +292,7 @@ color:firebrick;
 /*Estilo del footer*/
 .fila{
     color: firebrick;
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
     text-align: center;
     font-size: 12px;
 }
@@ -409,6 +409,30 @@ footer {
 /*Estilo de los objetos que aparecen al hacer scroll*/
 .aparecer-resultado{
     transform: translateY(0);
+    opacity: 1;
+}
+
+.aparecer-izquierda {
+    position: relative;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.aparecer-izquierda-resultado {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.aparecer-derecha {
+    position: relative;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.aparecer-derecha-resultado {
+    transform: translateX(0);
     opacity: 1;
 }
 

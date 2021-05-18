@@ -19,20 +19,7 @@ function comprobar() {
 //Muestra en el bloque de mensaje el nombre del usuario conectado
 document.getElementById("mensaje").innerHTML = sessionStorage.getItem("usuario");
 
-//Función que extrae del formulario de ingreso el nombre y la contraseña del usuario
-function ingresar() {
-  if (typeof (Storage) !== "undefined") {
-    // Almacena un valor usando el método setItem del objeto localStorage
-    var x = document.forms["formularioIngreso"]["usuario"].value;
-    sessionStorage.setItem("usuario", x);
-  } else {
-    alert("Este navegador no soporta web storage...");
-  }
-  location.reload();
-  return false;
-}
-
-//Prueba
+//Función que abre el XML
 function leerXML() {
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
@@ -44,6 +31,10 @@ function leerXML() {
   xhr.send();
 }
 
+/*
+Función que comprueba que el nombre y la contraseña introducidos en el formulario de login
+esten incluidos en el XML, dando acceso o mostrando un mensaje en caso contrario
+*/
 function miFuncion(xml) {
   var i;
   var nombre = document.forms["formularioIngreso"]["usuario"].value;
@@ -62,13 +53,16 @@ function miFuncion(xml) {
   }
 
   if (validado == true) {
-    sessionStorage.setItem("usuario", nombre);
-    location.reload();
+    if (typeof (Storage) !== "undefined") {
+      sessionStorage.setItem("usuario", nombre);
+      location.reload();
+    } else {
+      alert("Este navegador no soporta web storage...");
+    }
   } else {
-    window.alert("Usuario o contraseña incorrectos");
+    window.alert("Usuario o contraseña no validos");
   }
 }
-//Fin de prueba
 
 //Función que desconecta al usuario, vaciando la variable del session storage
 function salir() {
@@ -111,6 +105,38 @@ function aparecer() {
 
     if (revealTop < windowHeight - revealPoint) {
       reveals[i].classList.add("aparecer-resultado");
+    }
+  }
+}
+
+window.addEventListener("scroll", aparecerIzquierda);
+
+function aparecerIzquierda() {
+  var reveals = document.querySelectorAll(".aparecer-izquierda");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 50;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("aparecer-izquierda-resultado");
+    }
+  }
+}
+
+window.addEventListener("scroll", aparecerDerecha);
+
+function aparecerDerecha() {
+  var reveals = document.querySelectorAll(".aparecer-derecha");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 50;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("aparecer-derecha-resultado");
     }
   }
 }

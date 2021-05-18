@@ -108,7 +108,7 @@ h4 {
 }
 
 .active, .acordeon:hover {
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
   color: firebrick;
 }
 
@@ -184,9 +184,9 @@ h4 {
  width: 0;
  z-index: 1;
  right: 30px;
- border: medium solid #f2f2f2;
+ border: medium solid #f9f9f9;
  border-width: 10px 0 10px 10px;
- border-color: transparent transparent transparent #f2f2f2;
+ border-color: transparent transparent transparent #f9f9f9;
 }
   
 /* Flechas del lado derecho */
@@ -198,9 +198,9 @@ h4 {
  width: 0;
  z-index: 1;
  left: 30px;
- border: medium solid #f2f2f2;
+ border: medium solid #f9f9f9;
  border-width: 10px 10px 10px 0;
- border-color: transparent #f2f2f2 transparent transparent;
+ border-color: transparent #f9f9f9 transparent transparent;
 }
   
 /* Fija los circulos */
@@ -209,7 +209,7 @@ h4 {
 /* Contenido del Timeline */
 .content {
  padding: 5px 30px 20px 30px;
- background-color: #f2f2f2;
+ background-color: #f9f9f9;
  position: relative;
  border-radius: 6px;
 }
@@ -313,9 +313,9 @@ h4 {
   /* Coloca las flechas apuntando a la izquierda */
   .contenedor::before {
     left: 60px;
-    border: medium solid #f2f2f2;
+    border: medium solid #f9f9f9;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #f2f2f2 transparent transparent;
+    border-color: transparent #f9f9f9 transparent transparent;
   }
 
   /* Fija los circulos */

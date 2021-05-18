@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Información, noticias y compraventa de coches clásicos">
+    <meta name="keywords" content="Coches, Coches clasicos, Clasicos italianos, Automovilismo">
+    <meta name="author" content="Manuel Carrillo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace para la fuente de Google "Pinyon Script"-->
+    <link href='https://fonts.googleapis.com/css?family=Pinyon Script' rel='stylesheet'>
+    <!--Enlace para el uso de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS general-->
+    <link rel="stylesheet" href="..\css\CSS.css">
+    <!--CSS de la página-->
+    <link rel="stylesheet" href="../css/DollyCSS.css">
+    <title>Mi Clásico Italiano</title>
+</head>
+
+<body>
+
+    <div id="cabecera-dolly">
+        <div id="pdf">
+            <a href="">PDF</a>
+            
+        </div>
+
+        <div id="cabecera-centro">
+            <div id="mensaje"></div>
+            <div id="nav-logout" onclick="return salir()">
+                <i class="fa fa-sign-out"></i>
+            </div>
+        </div>
+
+        <div id="volver">
+            <a href="javaScript:history.back()">VOLVER</a>
+        </div>
+    </div>
+
+    <div id="dolly">
+        <div id="imagen-fondo"><img src="../media/fotos/otros/fondo2.png" alt="80s Fondo" />
+        </div>
+        <div id="imagen-frontal"><img src="../media/fotos/alfa/dolly-Ferrari-F40.png" alt="Ferrary F40" />
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <!--Newsletter y rrss-->
+    <div class="fila">
+        <!--Newsletter-->
+        <div id="nwsl" class="columna">
+            <p>SUSCRIBETE A NUESTRA NEWSLETTER</p>
+            <form action="">
+                <input type="email" id="nletter" name="newsletter"
+                    placeholder="Introduzca su dirección de correo electronico">
+                <input type="submit" value="ENVIAR">
+            </form>
+        </div>
+        <!--rrss-->
+        <div class="columna">
+            <p>SÍGANOS</p>
+            <div class="rrss">
+                <a target="blank" href="https://www.facebook.com/cenecmalaga/"><i class="fa fa-facebook"></i></a>
+                <a target="blank" href="https://twitter.com/cenecmalaga"><i class="fa fa-twitter"></i></a>
+                <a target="blank" href="https://www.instagram.com/cenecmalaga"><i class="fa fa-instagram"></i></a>
+                <a target="blank" href="https://www.linkedin.com/in/cenecmalaga"><i class="fa fa-linkedin"></i></a>
+                <a target="blank" href="https://www.youtube.com/channel/UCj-B5-a2nHm8TutiNWcIBKw"><i
+                        class="fa fa-youtube"></i></a>
+                <a target="blank" href="https://www.pinterest.es/cenecmalaga/"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Documentación y enlaces-->
+    <footer>
+        <div id="documentacion">
+            <div class="doc-columna">
+                <p>DOCUMENTACIÓN</p>
+                <a target="blank" href="..\media\documentacion\guias\GuiaProyecto.pdf">Guia del
+                    proyecto</a><br><br>
+                <a target="blank" href="..\media\documentacion\guias\RequisitosWeb.pdf">Requisitos
+                    de la web</a><br><br>
+                <a target="blank" href="..\media\documentacion\guias\CopiasSeguridad.pdf">Copias
+                    de seguridad</a><br><br>
+                <a target="blank" href="..\media\documentacion\guias\CriteriosSEO.pdf">Criterios SEO</a><br><br>
+                <!--
+                    <a target="blank" href=".\media\documentacion\guias\DiarioDesarrollo.pdf">Diario
+                    de desarrollo</a><br><br>
+                -->
+            </div>
+            <div class="doc-columna">
+                <p>DIAGRAMAS</p>
+                <a target="blank" href="..\media\documentacion\diagramas\DiagramaCasosUsos.png">Casos de uso</a><br><br>
+                <a target="blank" href="..\media\documentacion\diagramas\DiagramaEstadosProyecto.png">Diagrama de
+                    estados</a><br><br>
+                <a target="blank" href="..\media\documentacion\diagramas\DiagramaActividadFormulario.png">Diagrama de
+                    actividad</a><br><br>
+                <a target="blank" href="..\media\documentacion\diagramas\DiagramaFlujoLogin.jpg">Diagrama de flujo del
+                    login</a><br><br>
+            </div>
+            <div class="doc-columna">
+                <p>BOCETOS</p>
+                <a target="blank" href="..\media\documentacion\bocetos\BocetoPrincipal.png">Página principal</a><br><br>
+                <a target="blank" href="..\media\documentacion\bocetos\BocetoContacto.png">Página de
+                    contacto</a><br><br>
+                <a target="blank" href="..\media\documentacion\bocetos\BocetoMercado.png">Página de la
+                    tienda</a><br><br>
+                <a target="blank" href="..\media\documentacion\bocetos\HeaderNav.png">Header y nav</a><br><br>
+                <a target="blank" href="..\media\documentacion\bocetos\Footer.png">Footer</a><br><br>
+            </div>
+            <div class="doc-columna">
+                <p>ENLACES</p>
+                <a href="/html/Contacto.html">Contactanos</a><br><br>
+                <a href="/html/SobreNosotros.html">Sobre nosotros</a><br><br>
+                <a href="/html/dolly.html">Dolly Zoom</a><br><br>
+                <a href="https://www.cenecmalaga.es/" target="blank"><img src="..\media\fotos\otros\indice.png"
+                        alt="CENEC"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Copyright-->
+    <div id="copyright">
+        <p>MI CLÁSICO ITALIANO</p>
+        &copy; 2021 Manuel Carrillo
+    </div>
+
+</body>
+<!--Enlace a JavaScript-->
+<script src=".\js\javascript.js"></script>
+
+</html>

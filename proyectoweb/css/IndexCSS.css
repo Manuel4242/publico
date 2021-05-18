@@ -36,6 +36,10 @@ fecha: Abril de 2021
 /* Ilumina las flechas al pasar el ratón por encima*/
 .prev:hover, .next:hover {mix-blend-mode:unset;}
 
+#puntos {
+  text-align: center;
+}
+
 /* Estilo de los puntos de referencia */
 .dot {
   cursor: pointer;
