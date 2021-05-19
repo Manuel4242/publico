@@ -119,6 +119,12 @@ nav a {
     cursor: pointer;
 }
 
+#modos {
+    padding-right: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 nav a:hover, nav i:hover, #subnav:hover, #nav-login:hover {color: firebrick;}
 
 #subnav, #subnav-art {
