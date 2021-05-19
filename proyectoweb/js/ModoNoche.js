@@ -19,6 +19,10 @@ function modoNoche(){
     $('.panel').css('background', 'black');
     $('.content h2').css('color', 'black');
     $('.content p').css('color', 'black');
+    $('#logo a').css('color', 'royalblue');
+    $('h2').css('color', 'royalblue');
+    $('h3').css('color', 'royalblue');
+    $('#texto-advertencia h2').css('color', 'white');
     
     $('#noche').css('display', 'none');
     $('#dia').css('display', 'block');
