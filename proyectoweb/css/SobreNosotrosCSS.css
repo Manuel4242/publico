@@ -87,6 +87,7 @@ fecha: Febrero de 2021
  }
  
  .cita-texto {font-family: 'Pinyon Script';}
+ .cita-autor {font-size: 20px; color:#404040;}
 
 /*Estilo por debajo de los 600px*/
 @media screen and (max-width: 600px) {
