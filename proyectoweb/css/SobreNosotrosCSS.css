@@ -79,6 +79,17 @@ fecha: Febrero de 2021
 
 #logo-cenec{width: 60%;}
 
+.cita {
+  color: grey;
+  text-align: center;
+  font-size: 35px;
+  padding: 25px 0px 45px 0px;
+ }
+ 
+ .cita-texto {font-family: 'Pinyon Script';}
+ 
+ .cita-autor {font-size: 20px; color:#404040;}
+
 /*Estilo por debajo de los 600px*/
 @media screen and (max-width: 600px) {
 
