@@ -41,7 +41,7 @@ fecha: Febrero de 2021
 .contenedor {
   margin-top: 20px;
   border-radius: 5px;
-  padding: 10px 45px 10px 45px;
+  padding: 10px 45px 25px 45px;
   color: black;
   text-align: center;
   font-size: 16px;
@@ -76,6 +76,10 @@ fecha: Febrero de 2021
   display: table;
   clear: both;
 }
+
+#separador {padding-top: 50px;}
+
+#separador2 {padding: 20px;}
 
 #logo-cenec{width: 60%;}
 
